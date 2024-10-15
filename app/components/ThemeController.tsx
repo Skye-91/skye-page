@@ -1,3 +1,5 @@
+"use client"
+
 import { daisyuiThemes } from "@/tailwind.config"
 
 const capitalize = (str: string) => str.charAt(0).toUpperCase() + str.slice(1)
@@ -5,11 +7,7 @@ const capitalize = (str: string) => str.charAt(0).toUpperCase() + str.slice(1)
 export default function ThemeController() {
 	return (
 		<div className="dropdown">
-			<div
-				tabIndex={0}
-				role="button"
-				className="btn bg-primary text-neutral hover:bg-primary"
-			>
+			<div tabIndex={0} role="button" className="btn m-1">
 				Theme
 				<svg
 					width="12px"
@@ -23,7 +21,7 @@ export default function ThemeController() {
 			</div>
 			<ul
 				tabIndex={0}
-				className="dropdown-content bg-base-300 rounded-box z-[1] w-52 p-2 shadow-2xl"
+				className="dropdown-content bg-base-300 rounded-box z-20 w-52 p-2 shadow-2xl"
 			>
 				{daisyuiThemes.map((theme) => (
 					<li key={theme}>
@@ -33,6 +31,7 @@ export default function ThemeController() {
 							className="theme-controller btn btn-sm btn-block btn-ghost justify-start"
 							aria-label={capitalize(theme)}
 							value={theme}
+							onClick={() => localStorage.setItem("theme", theme)}
 						/>
 					</li>
 				))}

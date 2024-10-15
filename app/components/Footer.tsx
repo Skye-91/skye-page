@@ -15,6 +15,15 @@ export default function Footer() {
 					Neocities Page
 				</a>
 			</nav>
+			<p>
+				Images provided by{" "}
+				<a
+					className="link link-hover text-primary"
+					href="https://howlongtobeat.com"
+				>
+					HowLongToBeat
+				</a>{" "}
+			</p>
 			<aside>
 				<p>
 					Created with{" "}

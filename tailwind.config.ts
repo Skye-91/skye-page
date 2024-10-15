@@ -2,12 +2,12 @@ import type { Config } from "tailwindcss"
 import daisyui from "daisyui"
 
 export const daisyuiThemes = [
+	"dim",
 	"synthwave",
 	"retro",
 	"valentine",
 	"cyberpunk",
 	"aqua",
-	"dim",
 	"coffee",
 ]
 
