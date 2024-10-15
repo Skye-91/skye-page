@@ -14,20 +14,54 @@ export default function CardHolderWithFilters({ content }: Props) {
 	const [selectedStatus, setSelectedStatus] = useState<Status | "">("")
 	const [tagInput, setTagInput] = useState<string>("")
 	const [tags, setTags] = useState<string[]>([])
+	const [tagSuggestions, setTagSuggestions] = useState<string[]>([])
+	const [highlightedIndex, setHighlightedIndex] = useState(-1) // -1 indica nessun suggerimento selezionato
 
 	// -------- TAG INPUT HANDLING --------
 	/** Updates the `tagInput` when the user types in the input for the tags */
 	const handleTagInputChange = (
 		event: React.ChangeEvent<HTMLInputElement>
 	) => {
-		setTagInput(event.target.value)
+		const inputValue = event.target.value
+		setTagInput(inputValue)
+
+		if (inputValue.trim()) {
+			const allTags = content.flatMap((game) => game.tags)
+			const filteredSuggestions = allTags
+				.filter((tag) =>
+					tag.toLowerCase().includes(inputValue.toLowerCase())
+				) // Filtra i tag simili
+				.filter((tag) => !tags.includes(tag))
+
+			setTagSuggestions(Array.from(new Set(filteredSuggestions)))
+		} else {
+			setTagSuggestions([])
+		}
+	}
+
+	const handleTagSelect = (selectedTag: string) => {
+		setTags((prevTags) => [...prevTags, selectedTag])
+		setTagInput("")
+		setTagSuggestions([])
 	}
 
 	/** Adds the typed tag in the `tags` array when the user presses Enter */
-	const handleTagSubmit = (event: React.KeyboardEvent<HTMLInputElement>) => {
-		if (event.key === "Enter" && tagInput.trim()) {
-			setTags((prevTags) => [...prevTags, tagInput.trim()])
-			setTagInput("") // Reset input
+	const handleKeyDown = (event: React.KeyboardEvent<HTMLInputElement>) => {
+		if (tagSuggestions.length > 0) {
+			if (event.key === "ArrowDown") {
+				// Seleziona il suggerimento successivo
+				setHighlightedIndex((prevIndex) =>
+					prevIndex < tagSuggestions.length - 1 ? prevIndex + 1 : 0
+				)
+			} else if (event.key === "ArrowUp") {
+				// Seleziona il suggerimento precedente
+				setHighlightedIndex((prevIndex) =>
+					prevIndex > 0 ? prevIndex - 1 : tagSuggestions.length - 1
+				)
+			} else if (event.key === "Enter" && highlightedIndex >= 0) {
+				// Se l'utente preme Enter ed è selezionato un suggerimento
+				handleTagSelect(tagSuggestions[highlightedIndex])
+			}
 		}
 	}
 
@@ -130,10 +164,27 @@ export default function CardHolderWithFilters({ content }: Props) {
 					type="text"
 					value={tagInput}
 					onChange={handleTagInputChange}
-					onKeyDown={handleTagSubmit}
+					onKeyDown={handleKeyDown}
 					className="input input-bordered w-full max-w-xs mb-3"
 					placeholder="Insert a tag and press Enter..."
 				/>
+				{tagSuggestions.length > 0 && (
+					<ul className="z-10 w-full bg-neutral bordered text-neutral-content rounded-md">
+						{tagSuggestions.map((suggestion, index) => (
+							<li
+								key={suggestion}
+								className={`p-2 hover:bg-primary hover:text-primary-content cursor-pointer rounded-md ${
+									index === highlightedIndex
+										? "bg-neutral-500"
+										: ""
+								}`}
+								onClick={() => handleTagSelect(suggestion)}
+							>
+								{suggestion}
+							</li>
+						))}
+					</ul>
+				)}
 				<div className="mb-4">
 					{tags.map((tag) => (
 						<span key={tag} className="badge badge-outline mr-2">
