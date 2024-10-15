@@ -14,13 +14,34 @@ export default function CardHolderWithFilters({ content }: Props) {
 	const [selectedStatus, setSelectedStatus] = useState<Status | "">("")
 	const [tagInput, setTagInput] = useState<string>("")
 	const [tags, setTags] = useState<string[]>([])
+	const [tagSuggestions, setTagSuggestions] = useState<string[]>([])
 
 	// -------- TAG INPUT HANDLING --------
 	/** Updates the `tagInput` when the user types in the input for the tags */
 	const handleTagInputChange = (
 		event: React.ChangeEvent<HTMLInputElement>
 	) => {
-		setTagInput(event.target.value)
+		const inputValue = event.target.value
+		setTagInput(inputValue)
+
+		if (inputValue.trim()) {
+			const allTags = content.flatMap((game) => game.tags)
+			const filteredSuggestions = allTags
+				.filter((tag) =>
+					tag.toLowerCase().includes(inputValue.toLowerCase())
+				) // Filtra i tag simili
+				.filter((tag) => !tags.includes(tag))
+
+			setTagSuggestions(Array.from(new Set(filteredSuggestions)))
+		} else {
+			setTagSuggestions([])
+		}
+	}
+
+	const handleTagSelect = (selectedTag: string) => {
+		setTags((prevTags) => [...prevTags, selectedTag])
+		setTagInput("")
+		setTagSuggestions([])
 	}
 
 	/** Adds the typed tag in the `tags` array when the user presses Enter */
@@ -134,6 +155,19 @@ export default function CardHolderWithFilters({ content }: Props) {
 					className="input input-bordered w-full max-w-xs mb-3"
 					placeholder="Insert a tag and press Enter..."
 				/>
+				{tagSuggestions.length > 0 && (
+					<ul className="z-10 w-full bg-neutral input input-bordered text-neutral-content">
+						{tagSuggestions.map((suggestion) => (
+							<li
+								key={suggestion}
+								className="p-2 hover:bg-primary hover:text-primary-content cursor-pointer"
+								onClick={() => handleTagSelect(suggestion)}
+							>
+								{suggestion}
+							</li>
+						))}
+					</ul>
+				)}
 				<div className="mb-4">
 					{tags.map((tag) => (
 						<span key={tag} className="badge badge-outline mr-2">
