@@ -820,7 +820,7 @@ export const games: Game[] = [
 		title: "Snowbreak: Containment Zone",
 		tags: ["Singleplayer", "Live Service", "Gatcha"],
 		imageUrl:
-			"https://howlongtobeat.com/games/89786_Severed_Steel.jpg?width=250",
+			"https://howlongtobeat.com/games/131943_Snowbreak_Containment_Zone.jpg?width=250",
 	},
 	{
 		title: "Space Engineers",
@@ -854,7 +854,7 @@ export const games: Game[] = [
 		score: 7.5,
 		tags: ["Multiplayer"],
 		imageUrl:
-			"https://howlongtobeat.com/games/131943_Snowbreak_Containment_Zone.jpg?width=250",
+			"https://howlongtobeat.com/games/9632_Team_Fortress_2.jpg?width=250",
 	},
 	{
 		title: "TheDawn",
