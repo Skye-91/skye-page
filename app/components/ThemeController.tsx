@@ -21,7 +21,7 @@ export default function ThemeController() {
 			</div>
 			<ul
 				tabIndex={0}
-				className="dropdown-content bg-base-300 rounded-box z-20 w-52 p-2 shadow-2xl"
+				className="dropdown-content bg-base-300 rounded-box z-20 w-52 p-2 shadow-2xl right-0"
 			>
 				{daisyuiThemes.map((theme) => (
 					<li key={theme}>
