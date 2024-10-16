@@ -41,7 +41,7 @@ export default function CardHolderWithFilters({ content }: Props) {
 
 			setTagSuggestions(Array.from(new Set(filteredSuggestions)))
 		} else {
-			setTagSuggestions([])
+			setTagSuggestions([]) // Clear suggestions if input is empty
 		}
 	}
 
@@ -55,19 +55,27 @@ export default function CardHolderWithFilters({ content }: Props) {
 	const handleKeyDown = (event: React.KeyboardEvent<HTMLInputElement>) => {
 		if (tagSuggestions.length > 0) {
 			if (event.key === "ArrowDown") {
-				// Seleziona il suggerimento successivo
+				// Select the next suggestion
 				setHighlightedIndex((prevIndex) =>
 					prevIndex < tagSuggestions.length - 1 ? prevIndex + 1 : 0
 				)
 			} else if (event.key === "ArrowUp") {
-				// Seleziona il suggerimento precedente
+				// Select the previous suggestion
 				setHighlightedIndex((prevIndex) =>
 					prevIndex > 0 ? prevIndex - 1 : tagSuggestions.length - 1
 				)
 			} else if (event.key === "Enter" && highlightedIndex >= 0) {
-				// Se l'utente preme Enter ed è selezionato un suggerimento
 				handleTagSelect(tagSuggestions[highlightedIndex])
 			}
+		} else if (event.key === "ArrowDown" && tagInput === "") {
+			// If there are no suggestions and the input is empty, open the menu anyway
+			const allTags = content.flatMap((game) => game.tags)
+			const filteredSuggestions = allTags.filter(
+				(tag) => !tags.includes(tag)
+			)
+
+			setTagSuggestions(Array.from(new Set(filteredSuggestions)))
+			setHighlightedIndex(0)
 		}
 	}
 
