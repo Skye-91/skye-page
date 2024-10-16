@@ -119,8 +119,8 @@ export default function CardHolderWithFilters({ content }: Props) {
 	}
 
 	return (
-		<div className="flex flex-col md:flex-row ">
-			<aside className="w-full md:w-1/4 bg-base-300 p-4 rounded-2xl">
+		<div className="flex flex-col md:flex-row">
+			<aside className="w-full md:w-auto bg-base-300 p-4 rounded-2xl sticky top-24 h-max">
 				<h2 className="text-lg font-semibold mb-4">Filters</h2>
 
 				{/* Name Filter */}
@@ -132,7 +132,7 @@ export default function CardHolderWithFilters({ content }: Props) {
 					type="text"
 					value={searchName}
 					onChange={(e) => setSearchName(e.target.value)}
-					className="input input-bordered w-full max-w-xs mb-3"
+					className="input input-bordered w-full sm:w-full md:max-w-xs mb-3"
 					placeholder="Enter part of the name..."
 				/>
 
@@ -143,7 +143,7 @@ export default function CardHolderWithFilters({ content }: Props) {
 				<select
 					id="sortSelect"
 					onChange={handleSortChange}
-					className="select select-bordered w-full max-w-xs mb-3"
+					className="select select-bordered w-full sm:w-full md:max-w-xs mb-3"
 				>
 					<option value="desc">Descending</option>
 					<option value="asc">Ascending</option>
@@ -156,7 +156,7 @@ export default function CardHolderWithFilters({ content }: Props) {
 				<select
 					id="statusSelect"
 					onChange={handleStatusChange}
-					className="select select-bordered w-full max-w-xs mb-3"
+					className="select select-bordered w-full sm:w-full md:max-w-xs mb-3"
 				>
 					<option value="">All</option>
 					<option value="Completed">Completed</option>
@@ -175,9 +175,10 @@ export default function CardHolderWithFilters({ content }: Props) {
 					value={tagInput}
 					onChange={handleTagInputChange}
 					onKeyDown={handleKeyDown}
-					className="input input-bordered w-full max-w-xs mb-3"
+					className="input input-bordered w-full sm:w-full md:max-w-xs mb-3"
 					placeholder="Insert a tag and press Enter..."
 				/>
+
 				{tagSuggestions.length > 0 && (
 					<ul className="z-10 w-full bg-neutral bordered text-neutral-content rounded-md">
 						{tagSuggestions.map((suggestion, index) => (
@@ -195,6 +196,7 @@ export default function CardHolderWithFilters({ content }: Props) {
 						))}
 					</ul>
 				)}
+
 				<div className="mb-4">
 					{tags.map((tag) => (
 						<span key={tag} className="badge badge-outline mr-2">
@@ -210,7 +212,7 @@ export default function CardHolderWithFilters({ content }: Props) {
 				</div>
 			</aside>
 
-			<div className="w-full md:w-3/4 p-4">
+			<div className="w-full md:w-5/6 p-4 pt-0">
 				<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-4">
 					{sortedContent.length === 0 ? (
 						<p className="text-center">No content found</p>
