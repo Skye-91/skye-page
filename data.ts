@@ -94,7 +94,7 @@ export const games: Game[] = [
 		title: "Tsukihime (2000)",
 		tags: ["Singleplayer"],
 		imageUrl:
-			"https://howlongtobeat.com/games/FateHollowAtaraxia4713.jpg?width=250",
+			"https://howlongtobeat.com/games/Tsukihime.jpg?width=250",
 		status: "In Progress",
 		review: "I've read the Arcueid route. I should continue with the other routes before I get the remake.",
 	},
@@ -884,7 +884,6 @@ export const games: Game[] = [
 	},
 	{
 		title: "Warframe",
-		status: "Completed",
 		timesCompleted: 1,
 		tags: ["Multiplayer", "Endless"],
 		imageUrl: "https://howlongtobeat.com/games/Warframe.jpg?width=250",
