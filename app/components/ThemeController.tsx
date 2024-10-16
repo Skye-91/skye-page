@@ -2,26 +2,25 @@
 
 import { daisyuiThemes } from "@/tailwind.config"
 import { setCookie } from "cookies-next"
-import { getThemeClient } from "../util/getThemeClient"
+//import { getThemeClient } from "../util/getThemeClient"
 import { useEffect, useState } from "react"
 
 const capitalize = (str: string) => str.charAt(0).toUpperCase() + str.slice(1)
 
 export default function ThemeController() {
-	const [currentTheme, setCurrentTheme] = useState<string>("")
+	// const [currentTheme, setCurrentTheme] = useState<string>("")
 
-	// Ottiene il tema corrente all'inizializzazione del componente
-	useEffect(() => {
-		const savedTheme = getThemeClient() // Funzione che recupera il tema corrente
-		setCurrentTheme(savedTheme)
-	}, [])
+	// useEffect(() => {
+	// 	const savedTheme = getThemeClient()
+	// 	setCurrentTheme(savedTheme)
+	// }, [])
 
-	const handleThemeChange = (theme: string) => {
-		setCookie("theme", theme, {
-			maxAge: 604800, // 1 settimana
-		})
-		setCurrentTheme(theme) // Aggiorna lo stato locale
-	}
+	// const handleThemeChange = (theme: string) => {
+	// 	setCookie("theme", theme, {
+	// 		maxAge: 604800,
+	// 	})
+	// 	setCurrentTheme(theme)
+	// }
 
 	return (
 		<div className="dropdown">
@@ -49,8 +48,8 @@ export default function ThemeController() {
 							className="theme-controller btn btn-sm btn-block btn-ghost justify-start"
 							aria-label={capitalize(theme)}
 							value={theme}
-							checked={currentTheme === theme} // Controlla se è il tema selezionato
-							onChange={() => handleThemeChange(theme)} // Usa handleThemeChange per aggiornare il tema
+							// checked={currentTheme === theme}
+							// onChange={() => handleThemeChange(theme)}
 						/>
 					</li>
 				))}
