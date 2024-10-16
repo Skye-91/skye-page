@@ -1,4 +1,4 @@
-import { Game } from "./app/types/Game";
+import { Game } from "./app/types/Game"
 
 export const games: Game[] = [
 	{
@@ -24,7 +24,8 @@ export const games: Game[] = [
 		status: "Completed",
 		timesCompleted: 1,
 		tags: ["Singleplayer"],
-		imageUrl: "https://howlongtobeat.com/games/65827_AI_The_Somnium_Files.jpg?width=250",
+		imageUrl:
+			"https://howlongtobeat.com/games/65827_AI_The_Somnium_Files.jpg?width=250",
 	},
 	{
 		title: "Borderlands The Pre-Sequel",
@@ -93,8 +94,7 @@ export const games: Game[] = [
 	{
 		title: "Tsukihime (2000)",
 		tags: ["Singleplayer", "VN"],
-		imageUrl:
-			"https://howlongtobeat.com/games/Tsukihime.jpg?width=250",
+		imageUrl: "https://howlongtobeat.com/games/Tsukihime.jpg?width=250",
 		status: "In Progress",
 		review: "I've read the Arcueid route. I should continue with the other routes before I get the remake.",
 	},
@@ -345,6 +345,7 @@ export const games: Game[] = [
 		tags: ["Singleplayer"],
 		imageUrl:
 			"https://howlongtobeat.com/games/57506_Doom_Eternal.jpg?width=250",
+		review: "Without DLCs.",
 	},
 	{
 		title: "The Elder Scrolls V: Skyrim",
@@ -907,13 +908,14 @@ export const games: Game[] = [
 			"https://howlongtobeat.com/games/37861_Watch_Dogs_2.jpg?width=250",
 	},
 	{
-		title: "The Witcher 3: Wild Hunt (+ DLCs)",
+		title: "The Witcher 3: Wild Hunt",
 		score: 9,
 		status: "Completed",
 		timesCompleted: 1.75,
 		tags: ["Singleplayer"],
 		imageUrl:
 			"https://howlongtobeat.com/games/10270_The_Witcher_3_Wild_Hunt.jpg?width=250",
+		review: "With DLCs.",
 	},
 	{
 		title: "X4 Foundations",
@@ -950,4 +952,4 @@ export const games: Game[] = [
 		imageUrl:
 			"https://howlongtobeat.com/games/49620_Yakuza_kiwami_2.png?width=250",
 	},
-];
+]

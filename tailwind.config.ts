@@ -9,6 +9,8 @@ export const daisyuiThemes = [
 	"cyberpunk",
 	"aqua",
 	"coffee",
+	"dark",
+	"light",
 ]
 
 const config: Config = {

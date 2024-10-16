@@ -3,7 +3,7 @@ import localFont from "next/font/local"
 import "./globals.css"
 import Footer from "./components/Footer"
 import Navbar from "./components/Navbar"
-import { cookies } from "next/headers"
+import { getThemeServer } from "./util/getThemeServer"
 
 const geistSans = localFont({
 	src: "./fonts/GeistVF.woff",
@@ -25,15 +25,8 @@ export const metadata: Metadata = {
 export default function RootLayout({
 	children,
 }: Readonly<{ children: React.ReactNode }>) {
-	const themeCookie = cookies().get("theme")
-	let theme = "dim"
-
-	if (themeCookie !== undefined) {
-		theme = themeCookie.value
-	}
-
 	return (
-		<html lang="en" data-theme={theme}>
+		<html lang="en" data-theme={getThemeServer()}>
 			<body
 				className={`${geistSans.variable} ${geistMono.variable} antialiased`}
 			>
