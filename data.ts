@@ -150,7 +150,7 @@ export const games: Game[] = [
 		score: 7.3,
 		imageUrl:
 			"https://howlongtobeat.com/games/115666_GODDESS_OF_VICTORY_NIKKE.jpg?width=250",
-		review: 'Decent gameplay and story. <br><br> The gatcha is strangely easy (idk???). <br><br> It gets a lot more "difficoult" from chapter 23 onwards. <br><br> The story tries to get itself seriously, but the character design (and english VA) stick out a little bit too much (not that I mind).',
+		review: 'Decent gameplay and story. <br><br> The gatcha is strangely easy (idk???). <br><br> It gets a lot more "difficult" from chapter 23 onwards. <br><br> The story tries to get itself seriously, but the character design (and the english VA) stick out a little bit too much (not that I mind).',
 	},
 	{
 		title: "Minecraft (Java)",
@@ -318,7 +318,7 @@ export const games: Game[] = [
 		tags: ["Singleplayer"],
 		imageUrl:
 			"https://howlongtobeat.com/games/57514_Devil_May_Cry_5.jpg?width=250",
-		review: "The controls and combos are difficoult to remember.",
+		review: "The controls and combos are difficult to remember.",
 	},
 	{
 		title: "Doki Doki Literature Club",
