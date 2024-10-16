@@ -14,6 +14,12 @@ export default function Footer() {
 				>
 					Neocities Page
 				</a>
+				<a
+					href="https://github.com/Skye-91/skye-page/issues"
+					className="link link-hover underline"
+				>
+					GitHub Issues
+				</a>
 			</nav>
 			<p>
 				Images provided by{" "}

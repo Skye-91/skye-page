@@ -1,6 +1,6 @@
 "use client"
-
 import { daisyuiThemes } from "@/tailwind.config"
+import { getCookie, setCookie } from "cookies-next"
 
 const capitalize = (str: string) => str.charAt(0).toUpperCase() + str.slice(1)
 
@@ -31,7 +31,15 @@ export default function ThemeController() {
 							className="theme-controller btn btn-sm btn-block btn-ghost justify-start"
 							aria-label={capitalize(theme)}
 							value={theme}
-							onClick={() => localStorage.setItem("theme", theme)}
+							onClick={() => {
+								setCookie("theme", theme, {
+									maxAge: 604800,
+								})
+								console.log(
+									"Updated cookie:",
+									getCookie("theme")
+								)
+							}}
 						/>
 					</li>
 				))}
