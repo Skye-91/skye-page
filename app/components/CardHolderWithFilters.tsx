@@ -1,5 +1,5 @@
 "use client"
-import { useState } from "react"
+import { useEffect, useRef, useState } from "react"
 import Card from "./Card"
 import { Game, Status } from "../types/Game"
 
@@ -36,7 +36,7 @@ export default function CardHolderWithFilters({ content }: Props) {
 			const filteredSuggestions = allTags
 				.filter((tag) =>
 					tag.toLowerCase().includes(inputValue.toLowerCase())
-				) // Filtra i tag simili
+				) // Filter similar tags
 				.filter((tag) => !tags.includes(tag))
 
 			setTagSuggestions(Array.from(new Set(filteredSuggestions)))
@@ -55,20 +55,22 @@ export default function CardHolderWithFilters({ content }: Props) {
 	const handleKeyDown = (event: React.KeyboardEvent<HTMLInputElement>) => {
 		if (tagSuggestions.length > 0) {
 			if (event.key === "ArrowDown") {
-				// Select the next suggestion
+				// Select next suggestion
 				setHighlightedIndex((prevIndex) =>
 					prevIndex < tagSuggestions.length - 1 ? prevIndex + 1 : 0
 				)
 			} else if (event.key === "ArrowUp") {
-				// Select the previous suggestion
+				// Select previous suggestion
 				setHighlightedIndex((prevIndex) =>
 					prevIndex > 0 ? prevIndex - 1 : tagSuggestions.length - 1
 				)
 			} else if (event.key === "Enter" && highlightedIndex >= 0) {
 				handleTagSelect(tagSuggestions[highlightedIndex])
+			} else if (event.key === "Escape") {
+				setTagSuggestions([])
 			}
 		} else if (event.key === "ArrowDown" && tagInput === "") {
-			// If there are no suggestions and the input is empty, open the menu anyway
+			// Open suggestion menu
 			const allTags = content.flatMap((game) => game.tags)
 			const filteredSuggestions = allTags.filter(
 				(tag) => !tags.includes(tag)
@@ -83,6 +85,29 @@ export default function CardHolderWithFilters({ content }: Props) {
 	const handleTagRemove = (tagToRemove: string) => {
 		setTags((prevTags) => prevTags.filter((tag) => tag !== tagToRemove))
 	}
+
+	/** Reference for external click outide the menu */
+	const inputRef = useRef<HTMLDivElement | null>(null)
+
+	useEffect(() => {
+		// Closes the menu when there is a click outide the menu
+		const handleClickOutside = (event: MouseEvent) => {
+			if (
+				inputRef.current &&
+				!inputRef.current.contains(event.target as Node)
+			) {
+				setTagSuggestions([]) // Close the suggestions
+			}
+		}
+
+		// Listener for the mouse outside of the menu
+		document.addEventListener("mousedown", handleClickOutside)
+
+		// Listener removal
+		return () => {
+			document.removeEventListener("mousedown", handleClickOutside)
+		}
+	}, [inputRef])
 
 	// -------- CONTENT FILTERING --------
 
@@ -177,33 +202,35 @@ export default function CardHolderWithFilters({ content }: Props) {
 				<label htmlFor="tagInput" className="block mb-2">
 					By Tag:
 				</label>
-				<input
-					id="tagInput"
-					type="text"
-					value={tagInput}
-					onChange={handleTagInputChange}
-					onKeyDown={handleKeyDown}
-					className="input input-bordered w-full sm:w-full md:max-w-xs mb-3"
-					placeholder="Insert a tag and press Enter..."
-				/>
+				<div ref={inputRef}>
+					<input
+						id="tagInput"
+						type="text"
+						value={tagInput}
+						onChange={handleTagInputChange}
+						onKeyDown={handleKeyDown}
+						className="input input-bordered w-full sm:w-full md:max-w-xs mb-3"
+						placeholder="Insert a tag and press Enter..."
+					/>
 
-				{tagSuggestions.length > 0 && (
-					<ul className="z-10 w-full bg-neutral bordered text-neutral-content rounded-md">
-						{tagSuggestions.map((suggestion, index) => (
-							<li
-								key={suggestion}
-								className={`p-2 hover:bg-primary hover:text-primary-content cursor-pointer rounded-md ${
-									index === highlightedIndex
-										? "bg-neutral-500"
-										: ""
-								}`}
-								onClick={() => handleTagSelect(suggestion)}
-							>
-								{suggestion}
-							</li>
-						))}
-					</ul>
-				)}
+					{tagSuggestions.length > 0 && (
+						<ul className="z-10 w-full bg-neutral bordered text-neutral-content rounded-md">
+							{tagSuggestions.map((suggestion, index) => (
+								<li
+									key={suggestion}
+									className={`p-2 hover:bg-accent hover:text-primary-content cursor-pointer rounded-md ${
+										index === highlightedIndex
+											? "bg-primary text-primary-content"
+											: ""
+									}`}
+									onClick={() => handleTagSelect(suggestion)}
+								>
+									{suggestion}
+								</li>
+							))}
+						</ul>
+					)}
+				</div>
 
 				<div className="mb-4">
 					{tags.map((tag) => (

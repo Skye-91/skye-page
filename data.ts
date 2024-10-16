@@ -46,7 +46,7 @@ export const games: Game[] = [
 	{
 		title: "Genshin Impact",
 		score: 7.8,
-		tags: ["Singleplayer", "Multiplayer", "Live Service", "Gatcha"],
+		tags: ["Singleplayer", "Live Service", "Gatcha"],
 		imageUrl:
 			"https://howlongtobeat.com/games/68133_Genshin_Impact.jpg?width=250",
 	},
