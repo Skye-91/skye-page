@@ -9,11 +9,6 @@ export default function HomePage() {
 						Games
 					</Link>
 				</li>
-				<li>
-					<Link className="link link-hover underline" href="/anime">
-						Anime
-					</Link>
-				</li>
 			</ul>
 		</>
 	)

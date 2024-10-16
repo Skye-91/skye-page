@@ -15,7 +15,12 @@ export default function CardHolderWithFilters({ content }: Props) {
 	const [tagInput, setTagInput] = useState<string>("")
 	const [tags, setTags] = useState<string[]>([])
 	const [tagSuggestions, setTagSuggestions] = useState<string[]>([])
-	const [highlightedIndex, setHighlightedIndex] = useState(-1) // -1 indica nessun suggerimento selezionato
+	const [highlightedIndex, setHighlightedIndex] = useState(-1) // -1 is for no selected tip
+
+	/** Sorting games by title in ascending order before applying any filters */
+	const sortedByTitle = [...content].sort((a, b) =>
+		a.title.localeCompare(b.title)
+	)
 
 	// -------- TAG INPUT HANDLING --------
 	/** Updates the `tagInput` when the user types in the input for the tags */
@@ -73,7 +78,7 @@ export default function CardHolderWithFilters({ content }: Props) {
 	// -------- CONTENT FILTERING --------
 
 	/** Array that holds the filtered content based on the selected criteria */
-	const filteredContent = content
+	const filteredContent = sortedByTitle
 		// Name filter
 		.filter((game) =>
 			game.title.toLowerCase().includes(searchName.toLowerCase())
@@ -93,6 +98,9 @@ export default function CardHolderWithFilters({ content }: Props) {
 
 	/** Array that holds the filtered and sorted content based on the score */
 	const sortedContent = [...filteredContent].sort((a, b) => {
+		if (a.score === undefined) a.score = -1
+		if (b.score === undefined) b.score = -1
+
 		const scoreComparison = a.score - b.score
 		return sortOrder === "asc" ? scoreComparison : -scoreComparison
 	})
@@ -153,6 +161,7 @@ export default function CardHolderWithFilters({ content }: Props) {
 					<option value="Completed">Completed</option>
 					<option value="Dropped">Dropped</option>
 					<option value="In Progress">In Progress</option>
+					<option value="To Play">To Play</option>
 				</select>
 
 				{/* Tag Filter */}

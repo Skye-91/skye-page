@@ -1,9 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
-export type Status = "Completed" | "Dropped" | "In Progress"
+export type Status = "Completed" | "Dropped" | "In Progress" | "To Play"
 
 export type Game = {
 	title: string
-	score: number
+	score?: number
 	status?: Status
 	tags: string[]
 	imageUrl: string
@@ -27,13 +27,16 @@ export default function Card({ card }: Props) {
 
 	switch (card.status) {
 		case "Completed":
-			badgeStatus += " badge-primary"
+			badgeStatus += " badge-success"
 			break
 		case "Dropped":
 			badgeStatus += " badge-error"
 			break
 		case "In Progress":
-			badgeStatus += " badge-secondary"
+			badgeStatus += " badge-warning"
+			break
+		case "To Play":
+			badgeStatus += " badge-info"
 			break
 		default:
 			break
@@ -57,8 +60,10 @@ export default function Card({ card }: Props) {
 					{card.status && (
 						<div className={badgeStatus}>{card.status}</div>
 					)}
+					{card.score !== undefined && card.score >= 0 && (
+						<div>⭐ {card.score}</div>
+					)}
 
-					<div>⭐ {card.score}</div>
 					<div className="card-actions">
 						{card.tags.map((tag) => (
 							<div key={tag} className="badge badge-outline">
@@ -75,12 +80,17 @@ export default function Card({ card }: Props) {
 			>
 				<div className="modal-box">
 					<h3 className="font-bold text-lg text-primary">
-						Review {card.title}
+						{card.title}
 					</h3>
-					<h4 className="font-bold text-md italic">
-						Completed {card.timesCompleted} time
-						{card.timesCompleted && card.timesCompleted > 1 && "s"}
-					</h4>
+					{card.timesCompleted !== undefined && (
+						<h4 className="font-bold text-md italic">
+							Completed {card.timesCompleted} time
+							{card.timesCompleted &&
+								card.timesCompleted > 1 &&
+								"s"}
+						</h4>
+					)}
+
 					<hr className="mt-1" />
 					<p
 						className="py-4"

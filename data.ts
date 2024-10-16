@@ -1,4 +1,4 @@
-import { Game } from "./app/components/Card";
+import { Game } from "./app/components/Card"
 
 export const games: Game[] = [
 	{
@@ -32,7 +32,7 @@ export const games: Game[] = [
 	},
 	{
 		title: "Borderlands The Pre-Sequel",
-		score: -1,
+
 		status: "In Progress",
 		tags: ["Singleplayer"],
 		imageUrl:
@@ -124,7 +124,7 @@ export const games: Game[] = [
 	},
 	{
 		title: "Devil May Cry 5",
-		score: -1,
+
 		status: "In Progress",
 		tags: ["Singleplayer"],
 		imageUrl:
@@ -197,7 +197,7 @@ export const games: Game[] = [
 	},
 	{
 		title: "Fallout: New Vegas",
-		score: -1,
+
 		tags: ["Singleplayer"],
 		imageUrl:
 			"https://howlongtobeat.com/games/3351_Fallout_New_Vegas.jpg?width=250",
@@ -238,7 +238,7 @@ export const games: Game[] = [
 	},
 	{
 		title: "Grand Theft Auto IV",
-		score: -1,
+
 		status: "In Progress",
 		tags: ["Singleplayer"],
 		imageUrl:
@@ -257,7 +257,7 @@ export const games: Game[] = [
 	},
 	{
 		title: "Grand Theft Auto: San Andreas",
-		score: -1,
+
 		status: "In Progress",
 		tags: ["Singleplayer"],
 		imageUrl:
@@ -314,4 +314,4 @@ export const games: Game[] = [
 			"https://howlongtobeat.com/games/A_Hat_in_Time_logo.png?width=250",
 		review: "Cute.",
 	},
-];
+]
