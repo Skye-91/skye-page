@@ -1,9 +1,9 @@
 "use client"
 
 import { daisyuiThemes } from "@/tailwind.config"
-import { setCookie } from "cookies-next"
-//import { getThemeClient } from "../util/getThemeClient"
-import { useEffect, useState } from "react"
+// import { setCookie } from "cookies-next"
+// import { getThemeClient } from "../util/getThemeClient"
+// import { useEffect, useState } from "react"
 
 const capitalize = (str: string) => str.charAt(0).toUpperCase() + str.slice(1)
 
