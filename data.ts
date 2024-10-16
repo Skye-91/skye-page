@@ -1,4 +1,4 @@
-import { Game } from "./app/components/Card"
+import { Game } from "./app/types/Game"
 
 export const games: Game[] = [
 	{
@@ -9,7 +9,14 @@ export const games: Game[] = [
 		timesCompleted: 2,
 		imageUrl:
 			"https://howlongtobeat.com/games/Persona5visual.jpg?width=250",
-		review: "",
+		categoryScores: {
+			fun: 6,
+			gameplay: 6,
+			graphics: 9,
+			music: 9,
+			story: 7.5,
+		},
+		review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br><br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br><br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 	},
 	{
 		title: "Severed Steel",
@@ -19,7 +26,6 @@ export const games: Game[] = [
 		timesCompleted: 1.8,
 		imageUrl:
 			"https://howlongtobeat.com/games/89786_Severed_Steel.jpg?width=250",
-		review: "",
 	},
 	{
 		title: "X4 Foundations",
@@ -28,16 +34,14 @@ export const games: Game[] = [
 		timesCompleted: 3,
 		imageUrl:
 			"https://howlongtobeat.com/games/62872_X4_Foundations.jpg?width=250",
-		review: "",
 	},
 	{
 		title: "Borderlands The Pre-Sequel",
 
-		status: "In Progress",
+		status: "Dropped",
 		tags: ["Singleplayer"],
 		imageUrl:
 			"https://howlongtobeat.com/games/Borderlands_The_Pre-Sequel_box_art.jpg?width=250",
-		review: "",
 	},
 
 	{
@@ -46,7 +50,6 @@ export const games: Game[] = [
 		status: "Dropped",
 		tags: ["Singleplayer", "Multiplayer"],
 		imageUrl: "https://howlongtobeat.com/games/Bc2lowres.jpg?width=250",
-		review: "",
 	},
 	{
 		title: "BioShock",
@@ -56,7 +59,6 @@ export const games: Game[] = [
 		tags: ["Singleplayer"],
 		imageUrl:
 			"https://howlongtobeat.com/games/Bioshockcoverfinalcropped.jpg?width=250",
-		review: "",
 	},
 	{
 		title: "Black Mesa",
@@ -66,7 +68,6 @@ export const games: Game[] = [
 		tags: ["Singleplayer"],
 		imageUrl:
 			"https://howlongtobeat.com/games/1100_Black_Mesa.jpg?width=250",
-		review: "",
 	},
 	{
 		title: "Boneworks",
@@ -76,7 +77,6 @@ export const games: Game[] = [
 		tags: ["Singleplayer", "VR"],
 		imageUrl:
 			"https://howlongtobeat.com/games/69535_BONEWORKS.jpg?width=250",
-		review: "",
 	},
 	{
 		title: "Borderlands 2",
@@ -85,7 +85,6 @@ export const games: Game[] = [
 		tags: ["Singleplayer"],
 		imageUrl:
 			"https://howlongtobeat.com/games/Borderlands2boxart3.jpg?width=250",
-		review: "",
 	},
 	{
 		title: "Cities: Skylines",
@@ -93,7 +92,6 @@ export const games: Game[] = [
 		tags: ["Singleplayer", "Endless"],
 		imageUrl:
 			"https://howlongtobeat.com/games/Cities_Skylines_cover_art.jpg?width=250",
-		review: "",
 	},
 	{
 		title: "Cyberpunk 2077",
@@ -120,12 +118,11 @@ export const games: Game[] = [
 		tags: ["Singleplayer", "Multiplayer", "Live Service"],
 		imageUrl:
 			"https://howlongtobeat.com/games/43894_Destiny_2.png?width=250",
-		review: "",
 	},
 	{
 		title: "Devil May Cry 5",
 
-		status: "In Progress",
+		status: "To Play",
 		tags: ["Singleplayer"],
 		imageUrl:
 			"https://howlongtobeat.com/games/57514_Devil_May_Cry_5.jpg?width=250",
@@ -133,13 +130,12 @@ export const games: Game[] = [
 	},
 	{
 		title: "Doki Doki Literature Club",
-		score: 8.5,
+		score: 8,
 		status: "Completed",
 		timesCompleted: 1,
 		tags: ["Singleplayer"],
 		imageUrl:
 			"https://howlongtobeat.com/games/49377_Doki_Doki_Literature_Club.jpg?width=250",
-		review: "",
 	},
 	{
 		title: "Doom (2016)",
@@ -148,7 +144,6 @@ export const games: Game[] = [
 		timesCompleted: 1,
 		tags: ["Singleplayer"],
 		imageUrl: "https://howlongtobeat.com/games/doom_2016.jpg?width=250",
-		review: "",
 	},
 	{
 		title: "Doom Eternal",
@@ -158,7 +153,6 @@ export const games: Game[] = [
 		tags: ["Singleplayer"],
 		imageUrl:
 			"https://howlongtobeat.com/games/57506_Doom_Eternal.jpg?width=250",
-		review: "",
 	},
 	{
 		title: "The Elder Scrolls V: Skyrim",
@@ -176,7 +170,6 @@ export const games: Game[] = [
 		tags: ["Singleplayer", "Multiplayer", "Endless"],
 		imageUrl:
 			"https://howlongtobeat.com/games/EliteDangerous.jpg?width=250",
-		review: "",
 	},
 	{
 		title: "Euro Truck Simulator 2",
@@ -184,7 +177,6 @@ export const games: Game[] = [
 		tags: ["Singleplayer", "Endless"],
 		imageUrl:
 			"https://howlongtobeat.com/games/Euro_Truck_Simulator_2_cover.jpg?width=250",
-		review: "",
 	},
 	{
 		title: "Fallout 4",
@@ -193,7 +185,6 @@ export const games: Game[] = [
 		timesCompleted: 2,
 		tags: ["Singleplayer"],
 		imageUrl: "https://howlongtobeat.com/games/Fallout_4.jpg?width=250",
-		review: "",
 	},
 	{
 		title: "Fallout: New Vegas",
@@ -201,7 +192,6 @@ export const games: Game[] = [
 		tags: ["Singleplayer"],
 		imageUrl:
 			"https://howlongtobeat.com/games/3351_Fallout_New_Vegas.jpg?width=250",
-		review: "",
 	},
 	{
 		title: "The First Descendant",
@@ -217,7 +207,6 @@ export const games: Game[] = [
 		tags: ["Singleplayer", "Endless"],
 		imageUrl:
 			"https://howlongtobeat.com/games/2481853-box_gdt.png?width=250",
-		review: "",
 	},
 	{
 		title: "Garry's Mod",
@@ -234,7 +223,6 @@ export const games: Game[] = [
 		tags: ["Singleplayer"],
 		imageUrl:
 			"https://howlongtobeat.com/games/64937_God_Eater_3.jpg?width=250",
-		review: "",
 	},
 	{
 		title: "Grand Theft Auto IV",
@@ -243,7 +231,6 @@ export const games: Game[] = [
 		tags: ["Singleplayer"],
 		imageUrl:
 			"https://howlongtobeat.com/games/4062_Grand_Theft_Auto_IV.png?width=250",
-		review: "",
 	},
 	{
 		title: "Grand Theft Auto V",
@@ -253,7 +240,6 @@ export const games: Game[] = [
 		tags: ["Singleplayer"],
 		imageUrl:
 			"https://howlongtobeat.com/games/4064_Grand_Theft_Auto_V.jpg?width=250",
-		review: "",
 	},
 	{
 		title: "Grand Theft Auto: San Andreas",
@@ -262,7 +248,6 @@ export const games: Game[] = [
 		tags: ["Singleplayer"],
 		imageUrl:
 			"https://howlongtobeat.com/games/4073_Grand_Theft_Auto_San_Andreas.jpg?width=250",
-		review: "",
 	},
 	{
 		title: "Hacknet",
@@ -272,7 +257,6 @@ export const games: Game[] = [
 		tags: ["Singleplayer"],
 		imageUrl:
 			"https://howlongtobeat.com/games/Hacknet_header.jpg?width=250",
-		review: "",
 	},
 	{
 		title: "Half-Life (+ Blue Shift & Opposing Force)",
@@ -292,7 +276,6 @@ export const games: Game[] = [
 		tags: ["Singleplayer"],
 		imageUrl:
 			"https://howlongtobeat.com/games/256px-421px-HL2box.jpg?width=250",
-		review: "",
 	},
 	{
 		title: "Half-Life Alyx",
@@ -302,11 +285,10 @@ export const games: Game[] = [
 		tags: ["Singleplayer", "VR"],
 		imageUrl:
 			"https://howlongtobeat.com/games/72067_Half-Life_Alyx.jpg?width=250",
-		review: "",
 	},
 	{
 		title: "A Hat in Time",
-		score: 8.3,
+		score: 8,
 		status: "Completed",
 		timesCompleted: 1,
 		tags: ["Singleplayer"],

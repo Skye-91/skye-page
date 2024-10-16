@@ -1,6 +1,7 @@
 "use client"
 import { useState } from "react"
-import Card, { Game, Status } from "./Card"
+import Card from "./Card"
+import { Game, Status } from "../types/Game"
 
 interface Props {
 	content: Game[]

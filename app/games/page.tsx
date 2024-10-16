@@ -14,7 +14,7 @@ export default function GamesPage() {
 					<span className="bg-neutral p-1 pb-[7px] rounded-2xl">
 						⚠️
 					</span>{" "}
-					The scores are a work in progress
+					The scores are a work in progress and are subject to changes
 				</div>
 			</div>
 			<CardHolderWithFilters content={games} />
