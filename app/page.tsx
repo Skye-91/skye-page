@@ -1,15 +1,18 @@
-import Link from "next/link"
+// import Link from "next/link"
+import { redirect } from "next/navigation"
 
 export default function HomePage() {
-	return (
-		<>
-			<ul className="list-disc pl-5">
-				<li>
-					<Link className="link link-hover underline" href="/games">
-						Games
-					</Link>
-				</li>
-			</ul>
-		</>
-	)
+	redirect("/games")
+
+	// return (
+	// 	<>
+	// 		<ul className="list-disc pl-5">
+	// 			<li>
+	// 				<Link className="link link-hover underline" href="/games">
+	// 					Games
+	// 				</Link>
+	// 			</li>
+	// 		</ul>
+	// 	</>
+	// )
 }
