@@ -66,14 +66,14 @@ export const games: Game[] = [
 	{
 		title: "Fate/Grand Order",
 		score: 7.5,
-		tags: ["Singleplayer", "Live Service", "Gatcha"],
+		tags: ["Singleplayer", "Live Service", "Gatcha", "VN"],
 		imageUrl:
 			"https://howlongtobeat.com/games/36059_FateGrand_Order.jpg?width=250",
 	},
 	{
 		title: "Fate/Stay Night",
 		score: 8.9,
-		tags: ["Singleplayer"],
+		tags: ["Singleplayer", "VN"],
 		imageUrl:
 			"https://howlongtobeat.com/games/3416_FateStay_Night.jpg?width=250",
 		status: "Completed",
@@ -83,7 +83,7 @@ export const games: Game[] = [
 	{
 		title: "Fate/Hollow Ataraxia",
 		score: 8,
-		tags: ["Singleplayer"],
+		tags: ["Singleplayer", "VN"],
 		imageUrl:
 			"https://howlongtobeat.com/games/FateHollowAtaraxia4713.jpg?width=250",
 		status: "Completed",
@@ -92,7 +92,7 @@ export const games: Game[] = [
 	},
 	{
 		title: "Tsukihime (2000)",
-		tags: ["Singleplayer"],
+		tags: ["Singleplayer", "VN"],
 		imageUrl:
 			"https://howlongtobeat.com/games/Tsukihime.jpg?width=250",
 		status: "In Progress",
