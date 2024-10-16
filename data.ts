@@ -325,7 +325,7 @@ export const games: Game[] = [
 		score: 8,
 		status: "Completed",
 		timesCompleted: 1,
-		tags: ["Singleplayer"],
+		tags: ["Singleplayer", "VN"],
 		imageUrl:
 			"https://howlongtobeat.com/games/49377_Doki_Doki_Literature_Club.jpg?width=250",
 	},
