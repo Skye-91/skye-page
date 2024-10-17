@@ -153,7 +153,7 @@ export default function CardHolderWithFilters({ content }: Props) {
 
 	return (
 		<div className="flex flex-col md:flex-row">
-			<aside className="w-full md:w-auto bg-base-300 p-4 rounded-2xl sticky top-24 h-max">
+			<aside className="w-full md:w-auto bg-base-300 p-4 rounded-2xl md:sticky md:top-24 h-max">
 				<h2 className="text-lg font-semibold mb-4">Filters</h2>
 
 				{/* Name Filter */}
@@ -247,7 +247,7 @@ export default function CardHolderWithFilters({ content }: Props) {
 				</div>
 			</aside>
 
-			<div className="w-full md:w-5/6 p-4 pt-0">
+			<div className="w-full md:w-5/6 p-4 md:pt-0">
 				<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-4">
 					{sortedContent.length === 0 ? (
 						<p className="text-center">No content found</p>
