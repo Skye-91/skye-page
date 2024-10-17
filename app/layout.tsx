@@ -3,7 +3,7 @@ import localFont from "next/font/local"
 import "./globals.css"
 import Footer from "./components/Footer"
 import Navbar from "./components/Navbar"
-import { getThemeServer } from "./util/getThemeServer"
+// import { getThemeServer } from "./util/getThemeServer"
 
 const geistSans = localFont({
 	src: "./fonts/GeistVF.woff",
@@ -26,7 +26,7 @@ export default function RootLayout({
 	children,
 }: Readonly<{ children: React.ReactNode }>) {
 	return (
-		<html lang="en" data-theme={getThemeServer()}>
+		<html lang="en" data-theme={/*getThemeServer()*/ "dim"}>
 			<body
 				className={`${geistSans.variable} ${geistMono.variable} antialiased`}
 			>
