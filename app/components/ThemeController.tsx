@@ -1,26 +1,17 @@
 "use client"
 
 import { daisyuiThemes } from "@/tailwind.config"
-// import { setCookie } from "cookies-next"
-// import { getThemeClient } from "../util/getThemeClient"
-// import { useEffect, useState } from "react"
+import { useEffect, useState } from "react"
 
 const capitalize = (str: string) => str.charAt(0).toUpperCase() + str.slice(1)
 
 export default function ThemeController() {
-	// const [currentTheme, setCurrentTheme] = useState<string>("")
+	const [currentTheme, setCurrentTheme] = useState<string>("dim")
 
-	// useEffect(() => {
-	// 	const savedTheme = getThemeClient()
-	// 	setCurrentTheme(savedTheme)
-	// }, [])
-
-	// const handleThemeChange = (theme: string) => {
-	// 	setCookie("theme", theme, {
-	// 		maxAge: 604800,
-	// 	})
-	// 	setCurrentTheme(theme)
-	// }
+	useEffect(() => {
+		const savedTheme = localStorage.getItem("theme")
+		if (savedTheme) setCurrentTheme(savedTheme)
+	}, [])
 
 	return (
 		<div className="dropdown">
@@ -48,8 +39,9 @@ export default function ThemeController() {
 							className="theme-controller btn btn-sm btn-block btn-ghost justify-start"
 							aria-label={capitalize(theme)}
 							value={theme}
-							// checked={currentTheme === theme}
-							// onChange={() => handleThemeChange(theme)}
+							data-set-theme={theme}
+							checked={currentTheme === theme}
+							onChange={() => setCurrentTheme(theme)}
 						/>
 					</li>
 				))}

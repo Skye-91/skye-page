@@ -5,7 +5,6 @@ export default function GamesPage() {
 	return (
 		<>
 			<h1 className="mt-2 text-center text-4xl">Games 🎮</h1>
-
 			<div
 				tabIndex={0}
 				className="collapse collapse-open border-base-300 bg-warning text-warning-content border my-6"

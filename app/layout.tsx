@@ -3,8 +3,7 @@ import localFont from "next/font/local"
 import "./globals.css"
 import Footer from "./components/Footer"
 import Navbar from "./components/Navbar"
-import { cookies } from "next/headers"
-// import { getThemeServer } from "./util/getThemeServer"
+import ThemeProvider from "./components/ThemeProvider"
 
 const geistSans = localFont({
 	src: "./fonts/GeistVF.woff",
@@ -23,15 +22,13 @@ export const metadata: Metadata = {
 	description: "Skye Page",
 }
 
-export const dynamic = "force-dynamic"
-
 export default function RootLayout({
 	children,
 }: Readonly<{ children: React.ReactNode }>) {
-	const cookieStore = cookies()
-	console.log(cookieStore)
+	console.log("test")
 	return (
-		<html lang="en" data-theme={/*getThemeServer()*/ "dim"}>
+		<html lang="en">
+			<ThemeProvider />
 			<body
 				className={`${geistSans.variable} ${geistMono.variable} antialiased`}
 			>
