@@ -23,6 +23,8 @@ export const metadata: Metadata = {
 	description: "Skye Page",
 }
 
+export const dynamic = "force-dynamic"
+
 export default function RootLayout({
 	children,
 }: Readonly<{ children: React.ReactNode }>) {
