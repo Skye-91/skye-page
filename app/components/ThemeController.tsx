@@ -2,6 +2,7 @@
 
 import { daisyuiThemes } from "@/tailwind.config"
 import { useEffect, useState } from "react"
+import { getCookie, setCookie } from "cookies-next"
 
 const capitalize = (str: string) => str.charAt(0).toUpperCase() + str.slice(1)
 
@@ -39,9 +40,16 @@ export default function ThemeController() {
 							className="theme-controller btn btn-sm btn-block btn-ghost justify-start"
 							aria-label={capitalize(theme)}
 							value={theme}
-							data-set-theme={theme}
+							// data-set-theme={theme}
 							checked={currentTheme === theme}
-							onChange={() => setCurrentTheme(theme)}
+							onChange={() => {
+								setCurrentTheme(theme)
+								setCookie("theme", theme, { maxAge: 604800 })
+								console.log(
+									"Setted cookie:",
+									getCookie("theme")
+								)
+							}}
 						/>
 					</li>
 				))}
