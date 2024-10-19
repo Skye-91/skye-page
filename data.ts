@@ -61,28 +61,28 @@ export const games: Game[] = [
 	{
 		title: "Genshin Impact",
 		score: 7.8,
-		tags: ["Singleplayer", "Live Service", "Gatcha"],
+		tags: ["Singleplayer", "Live Service", "Gacha"],
 		imageUrl:
 			"https://howlongtobeat.com/games/68133_Genshin_Impact.jpg?width=250",
 	},
 	{
 		title: "Honkai: Star Rail",
 		score: 8.1,
-		tags: ["Singleplayer", "Live Service", "Gatcha"],
+		tags: ["Singleplayer", "Live Service", "Gacha"],
 		imageUrl:
 			"https://howlongtobeat.com/games/109100_Honkai_Star_Rail.png?width=250",
 	},
 	{
 		title: "Zenless Zone Zero",
 		score: 7.8,
-		tags: ["Singleplayer", "Live Service", "Gatcha"],
+		tags: ["Singleplayer", "Live Service", "Gacha"],
 		imageUrl:
 			"https://howlongtobeat.com/games/109101_Zenless_Zone_Zero.png?width=250",
 	},
 	{
 		title: "Fate/Grand Order",
 		score: 7.5,
-		tags: ["Singleplayer", "Live Service", "Gatcha", "VN"],
+		tags: ["Singleplayer", "Live Service", "Gacha", "VN"],
 		imageUrl:
 			"https://howlongtobeat.com/games/36059_FateGrand_Order.jpg?width=250",
 	},
@@ -135,7 +135,7 @@ export const games: Game[] = [
 	},
 	{
 		title: "Azur Lane",
-		tags: ["Singleplayer", "Live Service", "Gatcha"],
+		tags: ["Singleplayer", "Live Service", "Gacha"],
 		score: 6.5,
 		imageUrl:
 			"https://howlongtobeat.com/games/60929_Azur_Lane.jpg?width=250",
@@ -143,7 +143,7 @@ export const games: Game[] = [
 	},
 	{
 		title: "Arknights",
-		tags: ["Singleplayer", "Live Service", "Gatcha"],
+		tags: ["Singleplayer", "Live Service", "Gacha"],
 		score: 6.5,
 		imageUrl:
 			"https://howlongtobeat.com/games/74683_Arknights.jpg?width=250",
@@ -152,7 +152,7 @@ export const games: Game[] = [
 	},
 	{
 		title: "Girls' Frontline",
-		tags: ["Singleplayer", "Live Service", "Gatcha"],
+		tags: ["Singleplayer", "Live Service", "Gacha"],
 		score: 6.3,
 		imageUrl:
 			"https://howlongtobeat.com/games/67112_Girls_Frontline.png?width=250",
@@ -161,11 +161,11 @@ export const games: Game[] = [
 	},
 	{
 		title: "NIKKE: The Goddess of Victory",
-		tags: ["Singleplayer", "Live Service", "Gatcha"],
+		tags: ["Singleplayer", "Live Service", "Gacha"],
 		score: 7.3,
 		imageUrl:
 			"https://howlongtobeat.com/games/115666_GODDESS_OF_VICTORY_NIKKE.jpg?width=250",
-		review: 'Decent gameplay and story. <br><br> The gatcha is strangely easy (idk???). <br><br> It gets a lot more "difficult" from chapter 23 onwards. <br><br> The story tries to get itself seriously, but the character design (and the english VA) stick out a little bit too much (not that I mind).',
+		review: 'Decent gameplay and story. <br><br> The gacha is strangely easy (idk???). <br><br> It gets a lot more "difficult" from chapter 23 onwards. <br><br> The story tries to get itself seriously, but the character design (and the english VA) stick out a little bit too much (not that I mind).',
 	},
 	{
 		title: "Minecraft (Java)",
@@ -834,7 +834,7 @@ export const games: Game[] = [
 	},
 	{
 		title: "Snowbreak: Containment Zone",
-		tags: ["Singleplayer", "Live Service", "Gatcha"],
+		tags: ["Singleplayer", "Live Service", "Gacha"],
 		imageUrl:
 			"https://howlongtobeat.com/games/131943_Snowbreak_Containment_Zone.jpg?width=250",
 	},
