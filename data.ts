@@ -75,7 +75,7 @@ From the stylish menu UI, to the red and black theme, it's really good looking.`
 
 			gameplay: `I'm not a fan of _turn based_ RPJs or JRPGs, but this one introduced me to these genres. But I had fun exploring the various dungeons.`,
 
-			graphics: `The graphics are nice and clean (at least on the PS4 version), especially compared to the previous cartoony-like visuals.`,
+			graphics: `The graphics are nice and clean (at least on the PS4 version), especially compared to the previous games' cartoony-like visuals.`,
 
 			music: `
 Hands down, the best aspect about this game. It's a mix of jazz for the quiet times, and rock for combat.
@@ -329,6 +329,8 @@ Except for the gacha stuff, they have taken a totally different approach on this
 Even the characters follow this new line of aesthetic, breaking from the Honkai-like character design from the two previous games.
 
 It's actually quite interesting. But sometimes it's just... too much...
+
+I think it tries to imitate Persona 5 in some aspects. 
 			`,
 			gameplay: `It's a DMC-like (without the style score) and it's really fun.
 
