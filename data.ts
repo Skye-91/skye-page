@@ -163,14 +163,14 @@ I dropped it after the first 3-4 hours.`,
 	},
 	{
 		title: "Genshin Impact",
-		score: 7.8,
+		score: 7.2,
 		status: "On Hold",
 		tags: ["Singleplayer", "Live Service", "Gacha"],
 		imageUrl:
 			"https://howlongtobeat.com/games/68133_Genshin_Impact.jpg?width=250",
 		categoryScores: {
 			fun: 7,
-			gameplay: 5,
+			gameplay: 6,
 			graphics: 8,
 			music: 8,
 			story: 2,
@@ -226,16 +226,73 @@ The nice orchestra elevates this soundtrack by a lot.`,
 There is just *something* that irks me about it... I can't precisely figure out what is it, but the main thing I've noticed is that there is a *clear distinction* between the "good" and the "bad" guys. 
 With just *a couple* of exceptions. This creates some "childish" storytelling.
 
-I've finished up until Fontaine.
+One other thing is that MiHoYo seems to not know how to write endings. The most important case is the end of the Inazuma chapter. It was that bad.
+
+I've finished up until Fontaine (the fifth nation) and it was the best it could offer.
+
+I really don't like the cardboard cutout that is the MC.
 `,
 		},
 	},
 	{
 		title: "Honkai: Star Rail",
-		score: 8.1,
+		score: 8,
 		tags: ["Singleplayer", "Live Service", "Gacha"],
 		imageUrl:
 			"https://howlongtobeat.com/games/109100_Honkai_Star_Rail.png?width=250",
+
+		categoryScores: {
+			fun: 7,
+			gameplay: 2,
+			graphics: 8,
+			music: 8,
+			story: 8,
+		},
+		review: {
+			overview: `MiHoYo's second gacha game that I've played.
+
+I actually like this game, despite being a gacha AND a turn based RPG... a deadly combination. 
+
+Maybe it's because of my bias for sci-fi over fantasy... and the latest *main* story chapters.
+
+To know my stance on gacha games, see the Genshin Impact review.
+
+In this game I got extremely lucky with the pulls and I've "beaten" this game in about a single year (considering the months of on-off).
+`,
+
+			artDirection: `It's pretty good, even better than Genshin's.
+
+The character design is still kinda over the top, but this time there are no boring ones.
+
+The only "world" that I like is "Herta's Space Station" (the "tutorial" one) and I really want to see some more space stuff! This is a sci-fi game, damnit!
+
+Even tho, Penacony (the latest world) is also good-looking... especially the Dream's Edge... it's just too good for me to not mention it. The dreamy music, the sunset in the horizon, that daze that you can feel in this level is really good...
+`,
+
+			gameplay: `The combat is... meh... and the worst part of this game, for me. 
+
+Being a gacha turn based RPG, it has a lot of META and speculation around characters (way more than Genshin and ZZZ), since you really need all the advantages you can get in this type of game.
+
+The exploration of the maps is quite limited.
+`,
+
+			graphics: `It seems to be improved from Genshin Impact, even if it's really similar in some of the UI and other things.`,
+
+			music: `Basically on par with Genshin's music, it's just a change of genre.`,
+
+			performance: `Runs at 60 fps on high, with *some* frame drops.`,
+
+			story: `This is the best part of the game for me.
+
+It's the only MiHoYo game with a story that I can stand, even if the endings are still... not exactly good. But it's a clear improvement!
+
+The latest main story chapter is actually *really really good (even considering the problem above)!* 
+
+But *the filler in between the main story is very boring*, and I basically skimmed it trough quickly without giving it second thoughts.
+
+The characters are well written. Also, they actually gave the MC *some* personality, even if minor (it gets shown from *some* dialog options and mostly in Penacony's story).
+`,
+		},
 	},
 	{
 		title: "Zenless Zone Zero",
