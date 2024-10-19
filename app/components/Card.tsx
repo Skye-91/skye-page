@@ -24,11 +24,13 @@ export default function Card({ card }: Props) {
 			badgeStatus += " badge-error"
 			break
 		case "In Progress":
-			badgeStatus += " badge-warning"
+			badgeStatus += " badge-primary"
 			break
 		case "To Play":
 			badgeStatus += " badge-info"
 			break
+		case "On Hold":
+			badgeStatus += " badge-secondary"
 		default:
 			break
 	}
@@ -74,7 +76,7 @@ export default function Card({ card }: Props) {
 			>
 				<div className="modal-box w-full max-w-4xl lg:max-w-5xl">
 					{/* Head */}
-					<h3 className="font-bold text-lg text-primary">
+					<h3 className="font-bold text-3xl text-primary">
 						{card.title}
 					</h3>
 
@@ -85,6 +87,15 @@ export default function Card({ card }: Props) {
 								card.timesCompleted > 1 &&
 								"s"}
 						</h4>
+					)}
+
+					{card.review && card.review.steamReview && (
+						<a
+							className="underline italic"
+							href={card.review.steamReview}
+						>
+							Steam Review
+						</a>
 					)}
 
 					<hr className="mt-1 border border-primary" />
@@ -183,7 +194,6 @@ export default function Card({ card }: Props) {
 									{card.score !== undefined && (
 										<>
 											<hr className="mt-3 border border-secondary" />
-
 											<p className="text-2xl text-center font-bold pt-1">
 												Overall:{" "}
 												<span className="text-accent-content badge-accent rounded-lg px-1">
@@ -195,17 +205,58 @@ export default function Card({ card }: Props) {
 								</div>
 							)}
 						</div>
+
 						{/* Body -> Left -> Review */}
 						<div className="order-2 lg:order-1">
 							{card.review ? (
-								<p
-									className="my-4"
-									dangerouslySetInnerHTML={{
-										__html: card.review as string,
-									}}
-								></p>
+								<ReviewComponent
+									section="Overview"
+									review={card.review.overview}
+								/>
 							) : (
 								<p className="my-4">No review.</p>
+							)}
+
+							{card.review && card.review.graphics && (
+								<ReviewComponent
+									section="Graphics"
+									review={card.review.graphics}
+								/>
+							)}
+
+							{card.review && card.review.performance && (
+								<ReviewComponent
+									section="Performance"
+									review={card.review.performance}
+								/>
+							)}
+
+							{card.review && card.review.artDirection && (
+								<ReviewComponent
+									section="Art Direction"
+									review={card.review.artDirection}
+								/>
+							)}
+
+							{card.review && card.review.gameplay && (
+								<ReviewComponent
+									section="Gameplay"
+									review={card.review.gameplay}
+								/>
+							)}
+
+							{card.review && card.review.music && (
+								<ReviewComponent
+									section="Music"
+									review={card.review.music}
+								/>
+							)}
+
+							{card.review && card.review.story && (
+								<ReviewComponent
+									section="Story"
+									review={card.review.story}
+								/>
 							)}
 						</div>
 					</div>
@@ -214,6 +265,25 @@ export default function Card({ card }: Props) {
 					<button>close</button>
 				</form>
 			</dialog>
+		</>
+	)
+}
+
+interface ReviewProps {
+	section: string
+	review: string
+}
+
+function ReviewComponent({ section, review }: ReviewProps) {
+	return (
+		<>
+			<h3 className="text-xl font-bold mt-3 text-primary">{section}</h3>
+			<p
+				className="my-4"
+				dangerouslySetInnerHTML={{
+					__html: review as string,
+				}}
+			></p>
 		</>
 	)
 }

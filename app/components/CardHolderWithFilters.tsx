@@ -18,6 +18,19 @@ export default function CardHolderWithFilters({ content }: Props) {
 	const [tagSuggestions, setTagSuggestions] = useState<string[]>([])
 	const [highlightedIndex, setHighlightedIndex] = useState(-1) // -1 is for no selected tip
 
+	// -------- BASIC --------
+
+	/** Filter Reset */
+	const resetFilters = () => {
+		setSearchName("")
+		setSortOrder("desc")
+		setSelectedStatus("")
+		setTagInput("")
+		setTags([])
+		setTagSuggestions([])
+		setHighlightedIndex(-1)
+	}
+
 	/** Sorting games by title in ascending order before applying any filters */
 	const sortedByTitle = [...content].sort((a, b) =>
 		a.title.localeCompare(b.title)
@@ -156,6 +169,13 @@ export default function CardHolderWithFilters({ content }: Props) {
 			<aside className="w-full md:w-auto bg-base-300 p-4 rounded-2xl md:sticky md:top-24 h-max">
 				<h2 className="text-lg font-semibold mb-4">Filters</h2>
 
+				<button
+					className="btn btn-secondary w-full mb-2"
+					onClick={resetFilters}
+				>
+					Reset Filters
+				</button>
+
 				{/* Name Filter */}
 				<label htmlFor="nameSearch" className="block mb-2">
 					By Name:
@@ -176,6 +196,7 @@ export default function CardHolderWithFilters({ content }: Props) {
 				<select
 					id="sortSelect"
 					onChange={handleSortChange}
+					value={sortOrder}
 					className="select select-bordered w-full sm:w-full md:max-w-xs mb-3"
 				>
 					<option value="desc">Descending</option>
@@ -189,6 +210,7 @@ export default function CardHolderWithFilters({ content }: Props) {
 				<select
 					id="statusSelect"
 					onChange={handleStatusChange}
+					value={selectedStatus}
 					className="select select-bordered w-full sm:w-full md:max-w-xs mb-3"
 				>
 					<option value="">All</option>
@@ -196,6 +218,7 @@ export default function CardHolderWithFilters({ content }: Props) {
 					<option value="Dropped">Dropped</option>
 					<option value="In Progress">In Progress</option>
 					<option value="To Play">To Play</option>
+					<option value="On Hold">On Hold</option>
 				</select>
 
 				{/* Tag Filter */}

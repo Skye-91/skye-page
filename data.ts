@@ -13,6 +13,10 @@ export const links: { name: string; url: string }[] = [
 		name: "GitHub Issues",
 		url: "https://github.com/Skye-91/skye-page/issues",
 	},
+	{
+		name: "Steam",
+		url: "https://steamcommunity.com/profiles/76561198157574878",
+	},
 ]
 
 export const games: Game[] = [
@@ -31,7 +35,20 @@ export const games: Game[] = [
 			music: 9,
 			story: 7.5,
 		},
-		review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br><br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br><br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+		review: {
+			overview:
+				"This is the Overview. <br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br><br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br><br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+			artDirection:
+				"This is the Art Direction. <br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br><br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br><br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+			gameplay:
+				"This is the Gameplay. <br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br><br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br><br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+			graphics:
+				"This is the Graphics. <br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br><br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br><br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+			music: "This is the Music. <br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br><br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br><br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+			performance:
+				"This is the Performance. <br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br><br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br><br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+			story: "This is the Story. <br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br><br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br><br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+		},
 	},
 	{
 		title: "AI: The Somnium Files",
@@ -56,11 +73,15 @@ export const games: Game[] = [
 		tags: ["Singleplayer"],
 		imageUrl:
 			"https://howlongtobeat.com/games/68151_Elden_Ring.jpg?width=250",
-		review: "Too difficult for me.<br><br> I also don't like the setting/story/open world/gameplay. <br><br> Souls-like games are not for me.",
+		review: {
+			overview:
+				"Too difficult for me.<br><br> I also don't like the setting/story/open world/gameplay. <br><br> Souls-like games are not for me.",
+		},
 	},
 	{
 		title: "Genshin Impact",
 		score: 7.8,
+		status: "On Hold",
 		tags: ["Singleplayer", "Live Service", "Gacha"],
 		imageUrl:
 			"https://howlongtobeat.com/games/68133_Genshin_Impact.jpg?width=250",
@@ -94,7 +115,7 @@ export const games: Game[] = [
 			"https://howlongtobeat.com/games/3416_FateStay_Night.jpg?width=250",
 		status: "Completed",
 		timesCompleted: 1,
-		review: "Comfy 96 hours reading.",
+		review: { overview: "Comfy 96 hours reading." },
 	},
 	{
 		title: "Fate/Hollow Ataraxia",
@@ -104,14 +125,20 @@ export const games: Game[] = [
 			"https://howlongtobeat.com/games/FateHollowAtaraxia4713.jpg?width=250",
 		status: "Completed",
 		timesCompleted: 1,
-		review: "The main story gets separated by a lot of slice of life stuff and I almost forgot it.",
+		review: {
+			overview:
+				"The main story gets separated by a lot of slice of life stuff and I almost forgot it.",
+		},
 	},
 	{
 		title: "Tsukihime (2000)",
 		tags: ["Singleplayer", "VN"],
 		imageUrl: "https://howlongtobeat.com/games/Tsukihime.jpg?width=250",
 		status: "In Progress",
-		review: "I've read the Arcueid route. I should continue with the other routes before I get the remake.",
+		review: {
+			overview:
+				"I've read the Arcueid route. I should continue with the other routes before I get the remake.",
+		},
 	},
 	{
 		title: "Fate/Extella: The Umbral Star",
@@ -121,7 +148,7 @@ export const games: Game[] = [
 		status: "Completed",
 		timesCompleted: 1,
 		score: 6.9,
-		review: "The combat is boring (and also the story).",
+		review: { overview: "The combat is boring (and also the story)." },
 	},
 	{
 		title: "Fate/Extella Link",
@@ -131,7 +158,7 @@ export const games: Game[] = [
 		status: "Completed",
 		timesCompleted: 1,
 		score: 7.5,
-		review: "Way better than the first one.",
+		review: { overview: "Way better than the first one." },
 	},
 	{
 		title: "Azur Lane",
@@ -139,7 +166,10 @@ export const games: Game[] = [
 		score: 6.5,
 		imageUrl:
 			"https://howlongtobeat.com/games/60929_Azur_Lane.jpg?width=250",
-		review: "The only good thing about this game are the characters (and the fan-art).",
+		review: {
+			overview:
+				"The only good thing about this game are the characters (and the fan-art).",
+		},
 	},
 	{
 		title: "Arknights",
@@ -148,7 +178,10 @@ export const games: Game[] = [
 		imageUrl:
 			"https://howlongtobeat.com/games/74683_Arknights.jpg?width=250",
 		status: "Dropped",
-		review: "Interesting setting and mood, but the gameplay is not for me. <br><br> Played the first 3 hours and dropped it. <br><br> Watched the first season of the anime.",
+		review: {
+			overview:
+				"Interesting setting and mood, but the gameplay is not for me. <br><br> Played the first 3 hours and dropped it. <br><br> Watched the first season of the anime.",
+		},
 	},
 	{
 		title: "Girls' Frontline",
@@ -157,7 +190,10 @@ export const games: Game[] = [
 		imageUrl:
 			"https://howlongtobeat.com/games/67112_Girls_Frontline.png?width=250",
 		status: "Dropped",
-		review: "Played for a week and dropped it. The gameplay is boring and mobily-gameish. <br><br> Waiting for the sequel to come out.",
+		review: {
+			overview:
+				"Played for a week and dropped it. The gameplay is boring and mobily-gameish. <br><br> Waiting for the sequel to come out.",
+		},
 	},
 	{
 		title: "NIKKE: The Goddess of Victory",
@@ -165,7 +201,10 @@ export const games: Game[] = [
 		score: 7.3,
 		imageUrl:
 			"https://howlongtobeat.com/games/115666_GODDESS_OF_VICTORY_NIKKE.jpg?width=250",
-		review: 'Decent gameplay and story. <br><br> The gacha is strangely easy (idk???). <br><br> It gets a lot more "difficult" from chapter 23 onwards. <br><br> The story tries to get itself seriously, but the character design (and the english VA) stick out a little bit too much (not that I mind).',
+		review: {
+			overview:
+				'Decent gameplay and story. <br><br> The gacha is strangely easy (idk???). <br><br> It gets a lot more "difficult" from chapter 23 onwards. <br><br> The story tries to get itself seriously, but the character design (and the english VA) stick out a little bit too much (not that I mind).',
+		},
 	},
 	{
 		title: "Minecraft (Java)",
@@ -186,7 +225,7 @@ export const games: Game[] = [
 		tags: ["Singleplayer", "Endless"],
 		imageUrl:
 			"https://howlongtobeat.com/games/92511_PowerWash_Simulator.jpg?width=250",
-		review: "Relaxing.",
+		review: { overview: "Relaxing." },
 	},
 	{
 		title: "Mario Kart Wii",
@@ -283,7 +322,7 @@ export const games: Game[] = [
 		tags: ["Multiplayer"],
 		imageUrl:
 			"https://howlongtobeat.com/games/1957_Counter-Strike_2.jpg?width=250",
-		review: "Not for me.",
+		review: { overview: "Not for me." },
 	},
 	{
 		title: "Control",
@@ -298,7 +337,10 @@ export const games: Game[] = [
 		tags: ["Singleplayer"],
 		imageUrl:
 			"https://howlongtobeat.com/games/Cyberpunk-2077-2.jpg?width=250",
-		review: "Tecnically the first playthrough is not finished. The story is meh, but the gameplay is fun.",
+		review: {
+			overview:
+				"Tecnically the first playthrough is not finished. The story is meh, but the gameplay is fun.",
+		},
 	},
 	{
 		title: "Death Stranding",
@@ -316,7 +358,10 @@ export const games: Game[] = [
 		timesCompleted: 1,
 		tags: ["Singleplayer"],
 		imageUrl: "https://howlongtobeat.com/games/2448_Deponia.jpg?width=250",
-		review: "It's a shame that the company closed down because of Gollum.",
+		review: {
+			overview:
+				"It's a shame that the company closed down because of Gollum.",
+		},
 	},
 	{
 		title: "Destiny 2",
@@ -333,7 +378,9 @@ export const games: Game[] = [
 		tags: ["Singleplayer"],
 		imageUrl:
 			"https://howlongtobeat.com/games/57514_Devil_May_Cry_5.jpg?width=250",
-		review: "The controls and combos are difficult to remember.",
+		review: {
+			overview: "The controls and combos are difficult to remember.",
+		},
 	},
 	{
 		title: "Doki Doki Literature Club",
@@ -360,7 +407,7 @@ export const games: Game[] = [
 		tags: ["Singleplayer"],
 		imageUrl:
 			"https://howlongtobeat.com/games/57506_Doom_Eternal.jpg?width=250",
-		review: "Without DLCs.",
+		review: { overview: "Without DLCs." },
 	},
 	{
 		title: "The Elder Scrolls V: Skyrim",
@@ -370,7 +417,7 @@ export const games: Game[] = [
 		tags: ["Singleplayer"],
 		imageUrl:
 			"https://howlongtobeat.com/games/TheElderScrollsVSkyrimLegendaryEdition.jpg?width=250",
-		review: "A lot of mods.",
+		review: { overview: "A lot of mods." },
 	},
 	{
 		title: "Elite Dangerous",
@@ -407,7 +454,7 @@ export const games: Game[] = [
 		tags: ["Live Service"],
 		imageUrl:
 			"https://howlongtobeat.com/games/115058_The_First_Descendant.jpg?width=250",
-		review: "Too grindy and poor performance.",
+		review: { overview: "Too grindy and poor performance." },
 	},
 	{
 		title: "Game Dev Tycoon",
@@ -422,7 +469,7 @@ export const games: Game[] = [
 		tags: ["Singleplayer", "Endless"],
 		imageUrl:
 			"https://howlongtobeat.com/games/GarrysMod_292x136.jpg?width=250",
-		review: "A lot of mods.",
+		review: { overview: "A lot of mods." },
 	},
 	{
 		title: "God Eater 3",
@@ -438,7 +485,10 @@ export const games: Game[] = [
 		tags: ["Singleplayer"],
 		imageUrl:
 			"https://howlongtobeat.com/games/69898_Ghostrunner.jpg?width=250",
-		review: "I've played it for a bit, but my save got deleted. Thanks, Epic Games.",
+		review: {
+			overview:
+				"I've played it for a bit, but my save got deleted. Thanks, Epic Games.",
+		},
 	},
 	{
 		title: "Rage 2",
@@ -446,14 +496,14 @@ export const games: Game[] = [
 		score: 4,
 		tags: ["Singleplayer"],
 		imageUrl: "https://howlongtobeat.com/games/58031_Rage_2.jpg?width=250",
-		review: "Boring.",
+		review: { overview: "Boring." },
 	},
 	{
 		title: "The Sims 4",
 		tags: ["Singleplayer", "Endless"],
 		imageUrl:
 			"https://howlongtobeat.com/games/The_Sims_4_Box_Art.jpg?width=250",
-		review: "A lot of DLCs are needed to make the game fun.",
+		review: { overview: "A lot of DLCs are needed to make the game fun." },
 	},
 	{
 		title: "PC Building Simulator",
@@ -488,7 +538,7 @@ export const games: Game[] = [
 		tags: ["Multiplayer"],
 		imageUrl:
 			"https://howlongtobeat.com/games/64753_Apex_Legends.jpg?width=250",
-		review: "Battle Royales are not for me.",
+		review: { overview: "Battle Royales are not for me." },
 	},
 	{
 		title: "Need for Speed Heat",
@@ -498,7 +548,7 @@ export const games: Game[] = [
 		imageUrl:
 			"https://howlongtobeat.com/games/69695_Need_For_Speed_Heat.png?width=250",
 		score: 6.5,
-		review: "Kinda boring.",
+		review: { overview: "Kinda boring." },
 	},
 	{
 		title: "Grand Theft Auto IV",
@@ -542,7 +592,10 @@ export const games: Game[] = [
 		tags: ["Singleplayer"],
 		imageUrl:
 			"https://howlongtobeat.com/games/256px-Half-Life_Cover_Art.jpg?width=250",
-		review: "Revolutionary game for it's time, but the last part is not good.",
+		review: {
+			overview:
+				"Revolutionary game for it's time, but the last part is not good.",
+		},
 	},
 	{
 		title: "Half-Life: Blue Shift",
@@ -606,7 +659,7 @@ export const games: Game[] = [
 		tags: ["Singleplayer"],
 		imageUrl:
 			"https://howlongtobeat.com/games/A_Hat_in_Time_logo.png?width=250",
-		review: "Cute.",
+		review: { overview: "Cute." },
 	},
 	{
 		title: "Helltaker",
@@ -672,7 +725,7 @@ export const games: Game[] = [
 		timesCompleted: 1,
 		imageUrl:
 			"https://howlongtobeat.com/games/LegoCityUndercover.jpg?width=250",
-		review: "100%",
+		review: { overview: "100%" },
 	},
 	{
 		title: "Lego The Hobbit",
@@ -717,7 +770,10 @@ export const games: Game[] = [
 		timesCompleted: 0.8,
 		imageUrl:
 			"https://howlongtobeat.com/games/5905_Metal_Gear_Rising_Revengeance.jpg?width=250",
-		review: "Almost finished, but the long hiatus made me forget the controls.",
+		review: {
+			overview:
+				"Almost finished, but the long hiatus made me forget the controls.",
+		},
 	},
 	{
 		title: "Metal Gear Solid V: The Phantom Pain",
@@ -736,7 +792,7 @@ export const games: Game[] = [
 		timesCompleted: 1,
 		imageUrl:
 			"https://howlongtobeat.com/games/19181_Mirrors_Edge_Catalyst.jpg?width=250",
-		review: "100%",
+		review: { overview: "100%" },
 	},
 	{
 		title: "NieR Replicant ver.1.22474487139...",
@@ -745,7 +801,10 @@ export const games: Game[] = [
 		status: "In Progress",
 		imageUrl:
 			"https://howlongtobeat.com/games/76406_NieR_Replicant_ver122474487139.jpg?width=250",
-		review: "I adore NieR Automata, but this one is not as good. Too grindy with extremely boring sidequests.<br><br> Finished ending A. <br><br> I did not have fun.",
+		review: {
+			overview:
+				"I adore NieR Automata, but this one is not as good. Too grindy with extremely boring sidequests.<br><br> Finished ending A. <br><br> I did not have fun.",
+		},
 	},
 	{
 		title: "NieR: Automata",
@@ -773,7 +832,7 @@ export const games: Game[] = [
 		timesCompleted: 1,
 		imageUrl:
 			"https://howlongtobeat.com/games/57527_Outer_Wilds.jpg?width=250",
-		review: "No DLC.",
+		review: { overview: "No DLC." },
 	},
 	{
 		title: "Payday 2",
@@ -821,7 +880,7 @@ export const games: Game[] = [
 		tags: ["Singleplayer", "Mod"],
 		imageUrl:
 			"https://howlongtobeat.com/games/91358_Portal_Reloaded.jpg?width=250",
-		review: "Too difficult for me.",
+		review: { overview: "Too difficult for me." },
 	},
 	{
 		title: "Severed Steel",
@@ -843,7 +902,7 @@ export const games: Game[] = [
 		tags: ["Singleplayer", "Endless"],
 		imageUrl:
 			"https://howlongtobeat.com/games/Space_Engineers.jpg?width=250",
-		review: "Too difficult for me.",
+		review: { overview: "Too difficult for me." },
 	},
 	{
 		title: "Subnautica",
@@ -853,7 +912,7 @@ export const games: Game[] = [
 		timesCompleted: 1,
 		imageUrl:
 			"https://howlongtobeat.com/games/23740_Subnautica.jpg?width=250",
-		review: "No DLC.",
+		review: { overview: "No DLC." },
 	},
 	{
 		title: "The Talos Principle",
@@ -863,7 +922,10 @@ export const games: Game[] = [
 		tags: ["Singleplayer"],
 		imageUrl:
 			"https://howlongtobeat.com/games/TheTalosPrinciple.jpg?width=250",
-		review: "It was fun, but it got strangely depressing for me and I dropped it.",
+		review: {
+			overview:
+				"It was fun, but it got strangely depressing for me and I dropped it.",
+		},
 	},
 	{
 		title: "Team Fortress 2",
@@ -879,7 +941,9 @@ export const games: Game[] = [
 		timesCompleted: 1,
 		tags: ["Singleplayer"],
 		imageUrl: "https://howlongtobeat.com/games/87311_TheDawn.jpg?width=250",
-		review: "Nice small one-person indie game (just an hour).",
+		review: {
+			overview: "Nice small one-person indie game (just an hour).",
+		},
 	},
 	{
 		title: "Tower Unite",
@@ -903,7 +967,10 @@ export const games: Game[] = [
 		timesCompleted: 1,
 		tags: ["Multiplayer", "Endless"],
 		imageUrl: "https://howlongtobeat.com/games/Warframe.jpg?width=250",
-		review: "My muscle memory got annihilated by the control revamp in 2020. Too much confusing F2P-type content to return.",
+		review: {
+			overview:
+				"My muscle memory got annihilated by the control revamp in 2020. Too much confusing F2P-type content to return.",
+		},
 	},
 	{
 		title: "Watch Dogs",
@@ -930,7 +997,7 @@ export const games: Game[] = [
 		tags: ["Singleplayer"],
 		imageUrl:
 			"https://howlongtobeat.com/games/10270_The_Witcher_3_Wild_Hunt.jpg?width=250",
-		review: "With DLCs.",
+		review: { overview: "With DLCs." },
 	},
 	{
 		title: "X4 Foundations",
