@@ -237,6 +237,7 @@ I really don't like the cardboard cutout that is the MC.
 	{
 		title: "Honkai: Star Rail",
 		score: 8,
+		status: "On Hold",
 		tags: ["Singleplayer", "Live Service", "Gacha"],
 		imageUrl:
 			"https://howlongtobeat.com/games/109100_Honkai_Star_Rail.png?width=250",
@@ -305,14 +306,15 @@ My list of favorite worlds by story is:
 	{
 		title: "Zenless Zone Zero",
 		score: 7.5,
+		status: "In Progress",
 		tags: ["Singleplayer", "Live Service", "Gacha"],
 		imageUrl:
 			"https://howlongtobeat.com/games/109101_Zenless_Zone_Zero.png?width=250",
 		categoryScores: {
-			fun: 8,
-			gameplay: 7,
-			graphics: 7,
-			music: 7,
+			fun: 7,
+			gameplay: 8,
+			graphics: 8,
+			music: 8,
 			story: 4,
 		},
 		review: {
