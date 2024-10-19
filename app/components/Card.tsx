@@ -94,29 +94,16 @@ export default function Card({ card }: Props) {
 						id={"container-modal-" + card.title}
 						className="grid grid-cols-1 lg:grid-cols-[4fr,1fr] gap-4"
 					>
-						{/* Body -> Left -> Review */}
-						<div>
-							{card.review ? (
-								<p
-									className="my-4"
-									dangerouslySetInnerHTML={{
-										__html: card.review as string,
-									}}
-								></p>
-							) : (
-								<p className="my-4">No review.</p>
-							)}
-						</div>
-
-						<div>
-							{/* Body -> Right -> Image */}
+						{/* Body -> Right -> Image, Tags, Scores */}
+						<div className="order-1 lg:order-2">
+							{/* Image */}
 							<img
 								className="mt-4 rounded-2xl mx-auto block"
 								src={card.imageUrl}
 								alt={card.title}
 							/>
 
-							{/* Body -> Right -> Tags */}
+							{/* Tags */}
 							<div className="mt-2 text-center">
 								{card.status && (
 									<div className={badgeStatus}>
@@ -138,7 +125,7 @@ export default function Card({ card }: Props) {
 								))}
 							</div>
 
-							{/* Body -> Right -> Scores */}
+							{/* Scores */}
 							{card.categoryScores && (
 								<div className="mt-2">
 									<div className="italic">
@@ -206,6 +193,19 @@ export default function Card({ card }: Props) {
 										</>
 									)}
 								</div>
+							)}
+						</div>
+						{/* Body -> Left -> Review */}
+						<div className="order-2 lg:order-1">
+							{card.review ? (
+								<p
+									className="my-4"
+									dangerouslySetInnerHTML={{
+										__html: card.review as string,
+									}}
+								></p>
+							) : (
+								<p className="my-4">No review.</p>
 							)}
 						</div>
 					</div>

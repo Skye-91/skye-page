@@ -6,16 +6,13 @@ export default function GamesPage() {
 	return (
 		<>
 			<Navbar location="Games 🎮" />
-			<div
-				tabIndex={0}
-				className="collapse collapse-open border-base-300 bg-warning text-warning-content border my-6"
-			>
-				<div className="collapse-title text-xl font-medium">
+			<div className="collapse collapse-open border-base-300 bg-warning text-warning-content border max-w-7xl my-5 mx-auto">
+				<div className="collapse-title text-xl font-bold">
 					<span className="bg-neutral p-1 pb-[7px] rounded-2xl">
 						⚠️
 					</span>{" "}
-					The scores and the reviews are a work in progress and are
-					subject to changes
+					The scores and the reviews are a work in progress (and
+					mostly for testing purposes). They are subject to changes.
 				</div>
 			</div>
 			<CardHolderWithFilters content={games} />
