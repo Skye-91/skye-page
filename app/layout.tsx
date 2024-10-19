@@ -24,7 +24,6 @@ export const metadata: Metadata = {
 export default function RootLayout({
 	children,
 }: Readonly<{ children: React.ReactNode }>) {
-	console.log("test")
 	return (
 		<html lang="en">
 			<ThemeProvider />

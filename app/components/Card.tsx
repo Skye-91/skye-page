@@ -196,7 +196,7 @@ export default function Card({ card }: Props) {
 											<hr className="mt-3 border border-secondary" />
 											<p className="text-2xl text-center font-bold pt-1">
 												Overall:{" "}
-												<span className="text-accent-content badge-accent rounded-lg px-1">
+												<span className="badge-primary text-primary-content rounded-lg px-1">
 													{card.score}
 												</span>
 											</p>
@@ -209,47 +209,65 @@ export default function Card({ card }: Props) {
 						{/* Body -> Left -> Review */}
 						<div className="order-2 lg:order-1">
 							{card.review ? (
-								<ReviewComponent
-									section="Overview"
-									review={card.review.overview}
-								/>
+								<>
+									<ReviewComponent
+										section="Overview"
+										review={card.review.overview}
+									/>
+									<hr className="border border-secondary" />
+								</>
 							) : (
 								<p className="my-4">No review.</p>
 							)}
 
 							{card.review && card.review.graphics && (
-								<ReviewComponent
-									section="Graphics"
-									review={card.review.graphics}
-								/>
+								<>
+									<ReviewComponent
+										section="Graphics"
+										review={card.review.graphics}
+									/>
+									<hr className="border border-secondary" />
+								</>
 							)}
 
 							{card.review && card.review.performance && (
-								<ReviewComponent
-									section="Performance"
-									review={card.review.performance}
-								/>
+								<>
+									<ReviewComponent
+										section="Performance"
+										review={card.review.performance}
+									/>
+									<hr className="border border-secondary" />
+								</>
 							)}
 
 							{card.review && card.review.artDirection && (
-								<ReviewComponent
-									section="Art Direction"
-									review={card.review.artDirection}
-								/>
+								<>
+									<ReviewComponent
+										section="Art Direction"
+										review={card.review.artDirection}
+									/>
+									<hr className="border border-secondary" />
+								</>
 							)}
 
 							{card.review && card.review.gameplay && (
-								<ReviewComponent
-									section="Gameplay"
-									review={card.review.gameplay}
-								/>
+								<>
+									<ReviewComponent
+										section="Gameplay"
+										review={card.review.gameplay}
+									/>
+									<hr className="border border-secondary" />
+								</>
 							)}
 
 							{card.review && card.review.music && (
-								<ReviewComponent
-									section="Music"
-									review={card.review.music}
-								/>
+								<>
+									<ReviewComponent
+										section="Music"
+										review={card.review.music}
+									/>
+									<hr className="border border-secondary" />
+								</>
 							)}
 
 							{card.review && card.review.story && (
