@@ -19,10 +19,33 @@ export const links: { name: string; url: string }[] = [
 	},
 ]
 
+// 	categoryScores: {
+// 		fun: 6,
+// 		gameplay: 8,
+// 		graphics: 9,
+// 		music: 9,
+// 		story: 7,
+// 	},
+// 	review: {
+// 		overview: ``,
+
+// 		artDirection: ``,
+
+// 		gameplay: ``,
+
+// 		graphics: ``,
+
+// 		music: ``,
+
+// 		performance: ``,
+
+// 		story: ``,
+// 	},
+
 export const games: Game[] = [
 	{
 		title: "Persona 5",
-		score: 9,
+		score: 9.2,
 		status: "Completed",
 		tags: ["Singleplayer"],
 		timesCompleted: 2,
@@ -30,42 +53,96 @@ export const games: Game[] = [
 			"https://howlongtobeat.com/games/Persona5visual.jpg?width=250",
 		categoryScores: {
 			fun: 6,
-			gameplay: 6,
+			gameplay: 8,
 			graphics: 9,
 			music: 9,
-			story: 7.5,
+			story: 7,
 		},
 		review: {
-			overview:
-				"This is the Overview. <br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br><br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br><br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-			artDirection:
-				"This is the Art Direction. <br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br><br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br><br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-			gameplay:
-				"This is the Gameplay. <br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br><br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br><br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-			graphics:
-				"This is the Graphics. <br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br><br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br><br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-			music: "This is the Music. <br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br><br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br><br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-			performance:
-				"This is the Performance. <br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br><br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br><br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-			story: "This is the Story. <br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br><br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br><br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+			overview: `
+I've only played the base version of Persona 5 on my PS4 in 2017.
+
+*It's basically one of my favorite games ever*, even tough it has passed a long time since I have played it.
+
+**It has some flaws**, but it's really good from what I can remember.
+
+I don't know if I'm going to play the Royale version on PC.`,
+
+			artDirection: `
+I really love the visual theme of this game. 
+
+From the stylish menu UI, to the red and black theme, it's really good looking.`,
+
+			gameplay: `I'm not a fan of _turn based_ RPJs or JRPGs, but this one introduced me to these genres. But I had fun exploring the various dungeons.`,
+
+			graphics: `The graphics are nice and clean (at least on the PS4 version), especially compared to the previous cartoony-like visuals.`,
+
+			music: `
+Hands down, the best aspect about this game. It's a mix of jazz for the quiet times, and rock for combat.
+
+It has really nice tunes and vocals and the relaxing themes are really good.`,
+
+			performance: `I had no performance issues.`,
+
+			story: `
+I don't remember many details of the story, but when I played it, I thought it was nice.
+
+If I played it again now, I would most likely find some things that I'm not ok with.
+
+For what I remember, around September-October (in game), there is a new character introduced, but it hasn't been used much, most likely because it was almost the end of the game (in December).
+
+But, other than that, the main cast is actually quite good and interesting.
+`,
 		},
 	},
 	{
 		title: "AI: The Somnium Files",
-		score: 9,
+		score: 9.2,
 		status: "Completed",
 		timesCompleted: 1,
-		tags: ["Singleplayer"],
+		tags: ["Singleplayer", "VN"],
 		imageUrl:
 			"https://howlongtobeat.com/games/65827_AI_The_Somnium_Files.jpg?width=250",
+		categoryScores: {
+			fun: 9,
+			gameplay: 7,
+			graphics: 7,
+			music: 8,
+			story: 9,
+		},
+		review: {
+			overview: `A very interesting and fun visual novel game.`,
+
+			artDirection: `The character design and the design of the dreams are quite good.`,
+
+			gameplay: `
+It's some sort of breed between a VN and a point-and-click game.
+
+It also has different timelines and endings, that culminate in a single canonical one.`,
+
+			graphics: `Nice and clean.`,
+
+			music: `It definitely suits the dream-like experiences that you go through the game.`,
+
+			performance: `I had no issues on PC.`,
+
+			story: `
+The best part of this game.
+
+I found it's writing to be quite funny.
+
+The final ending (despite the cringy ending song) is also good.`,
+		},
 	},
 	{
 		title: "Borderlands The Pre-Sequel",
-
 		status: "Dropped",
 		tags: ["Singleplayer"],
 		imageUrl:
 			"https://howlongtobeat.com/games/Borderlands_The_Pre-Sequel_box_art.jpg?width=250",
+		review: {
+			overview: `I just found it very boring after 2-3 hours of gameplay.`,
+		},
 	},
 	{
 		title: "Elden Ring",
@@ -74,8 +151,14 @@ export const games: Game[] = [
 		imageUrl:
 			"https://howlongtobeat.com/games/68151_Elden_Ring.jpg?width=250",
 		review: {
-			overview:
-				"Too difficult for me.<br><br> I also don't like the setting/story/open world/gameplay. <br><br> Souls-like games are not for me.",
+			overview: `
+I don't like souls-like games, and this is not an exception.
+
+It's just too difficult and frustrating for me.
+
+I also don't like the setting/story/open world/gameplay/controls.
+
+I dropped it after the first 3-4 hours.`,
 		},
 	},
 	{
@@ -85,6 +168,67 @@ export const games: Game[] = [
 		tags: ["Singleplayer", "Live Service", "Gacha"],
 		imageUrl:
 			"https://howlongtobeat.com/games/68133_Genshin_Impact.jpg?width=250",
+		categoryScores: {
+			fun: 7,
+			gameplay: 5,
+			graphics: 8,
+			music: 8,
+			story: 2,
+		},
+		review: {
+			overview: `MiHoYo's giant cash cow... I have a lot to say about this and other gacha games...
+
+I'll begin with the big thing, the gacha, but I'll be brief about it.
+
+**Premise: On every gacha I've played, I've always been a F2P. And it will not change anytime soon.**
+
+I simply don't like wasting money for a _small chance_ of getting a character (or equipment), and I consider this genre of live-service games to be a subset of _pay-to-win games_.
+
+Yes, there are some good things that can be done without spending money, just with what the game gives you, but it's just not comparable to a META approach. It's just a ploy to get you to spend money on their virtual slot-machines.
+
+Luckily, I was not addicted to this style of playing gachas, and I saved, planned and speculated on upcoming banners.
+
+**I consider a gacha to be "beaten" when:** I have all the characters that I like/want (optional) or I have at least one good and reliable way to beat most of the _primary game content_ (e.g. story)
+
+I can say that I have "beaten" every gacha game that I actually "like", if I stay by that definition.`,
+
+			artDirection: `It's actually quite good.
+
+The character design is kinda over the top (or kinda boring, it depends), but i have no real problems with that.
+
+All of the nations that are currently in the game look very distinct and there a lot of beautiful spots.
+
+I often reach a peak of a mountain or a hill, and just stand there, admiring the beautiful landscape.
+
+This is definitely one of the two selling points of Genshin. The other being the exploration gameplay.`,
+
+			gameplay: `The combat is ok.
+
+The best thing about the gameplay is the exploration. There are A LOT of things to do.
+
+Even though it is mostly minigames, just the act of unlocking the various teleporters spread across the map and admiring the sceneries is fun enough for me.
+
+**BUT** the caveat of this game is the character progression and acquisition. Being a gacha, you must GRIND, GRIND and GRIND EVEN MORE to make your character strong enough for the game content.
+
+There is also an "end-game" mode (Abyss) where it is necessary to have multiple teams ready and in top performance. It's optional, but it hands out *some extra* currency for the gacha. I recommend staying away from it anyway.
+`,
+
+			graphics: `It's ok, if a little simple. Just enable the bloom and set everything to the max and it's better.`,
+
+			music: `It's pretty good and fit the aesthetics of the place you're currently in.
+
+The nice orchestra elevates this soundtrack by a lot.`,
+
+			performance: `Runs at 60 fps on high, with *some* frame drops.`,
+
+			story: `This is my least favorite part of the game.
+
+There is just *something* that irks me about it... I can't precisely figure out what is it, but the main thing I've noticed is that there is a *clear distinction* between the "good" and the "bad" guys. 
+With just *a couple* of exceptions. This creates some "childish" storytelling.
+
+I've finished up until Fontaine.
+`,
+		},
 	},
 	{
 		title: "Honkai: Star Rail",

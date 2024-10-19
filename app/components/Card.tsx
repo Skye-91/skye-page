@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { Game } from "../types/Game"
+import ReviewComponent from "./ReviewComponent"
 import ScoreBar from "./ScoreBar"
 
 interface Props {
@@ -283,25 +284,6 @@ export default function Card({ card }: Props) {
 					<button>close</button>
 				</form>
 			</dialog>
-		</>
-	)
-}
-
-interface ReviewProps {
-	section: string
-	review: string
-}
-
-function ReviewComponent({ section, review }: ReviewProps) {
-	return (
-		<>
-			<h3 className="text-xl font-bold mt-3 text-primary">{section}</h3>
-			<p
-				className="my-4"
-				dangerouslySetInnerHTML={{
-					__html: review as string,
-				}}
-			></p>
 		</>
 	)
 }
