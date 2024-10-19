@@ -214,7 +214,7 @@ export default function Card({ card }: Props) {
 										section="Overview"
 										review={card.review.overview}
 									/>
-									<hr className="border border-secondary" />
+									<hr className="border border-base-content" />
 								</>
 							) : (
 								<p className="my-4">No review.</p>
@@ -226,7 +226,7 @@ export default function Card({ card }: Props) {
 										section="Graphics"
 										review={card.review.graphics}
 									/>
-									<hr className="border border-secondary" />
+									<hr className="border border-base-content" />
 								</>
 							)}
 
@@ -236,7 +236,7 @@ export default function Card({ card }: Props) {
 										section="Performance"
 										review={card.review.performance}
 									/>
-									<hr className="border border-secondary" />
+									<hr className="border border-base-content" />
 								</>
 							)}
 
@@ -246,7 +246,7 @@ export default function Card({ card }: Props) {
 										section="Art Direction"
 										review={card.review.artDirection}
 									/>
-									<hr className="border border-secondary" />
+									<hr className="border border-base-content" />
 								</>
 							)}
 
@@ -256,7 +256,7 @@ export default function Card({ card }: Props) {
 										section="Gameplay"
 										review={card.review.gameplay}
 									/>
-									<hr className="border border-secondary" />
+									<hr className="border border-base-content" />
 								</>
 							)}
 
@@ -266,7 +266,7 @@ export default function Card({ card }: Props) {
 										section="Music"
 										review={card.review.music}
 									/>
-									<hr className="border border-secondary" />
+									<hr className="border border-base-content" />
 								</>
 							)}
 
