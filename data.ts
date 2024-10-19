@@ -1,5 +1,20 @@
 import { Game } from "./app/types/Game"
 
+export const links: { name: string; url: string }[] = [
+	{
+		name: "Twitter",
+		url: "https://x.com/Sky_9911",
+	},
+	{
+		name: "Bluesky",
+		url: "https://bsky.app/profile/skye91.bsky.social",
+	},
+	{
+		name: "GitHub Issues",
+		url: "https://github.com/Skye-91/skye-page/issues",
+	},
+]
+
 export const games: Game[] = [
 	{
 		title: "Persona 5",

@@ -1,25 +1,18 @@
+import { links } from "../../data"
+
 export default function Footer() {
 	return (
 		<footer className="footer footer-center bg-base-200 text-base-content rounded p-10">
 			<nav className="grid grid-flow-col gap-4">
-				<a
-					href="https://x.com/Sky_9911"
-					className="link link-hover underline"
-				>
-					Twitter
-				</a>
-				<a
-					href="https://skye-page.neocities.org/"
-					className="link link-hover underline"
-				>
-					Neocities Page
-				</a>
-				<a
-					href="https://github.com/Skye-91/skye-page/issues"
-					className="link link-hover underline"
-				>
-					GitHub Issues
-				</a>
+				{links.map((link, index) => (
+					<a
+						key={index}
+						href={link.url}
+						className="link link-hover underline"
+					>
+						{link.name}
+					</a>
+				))}
 			</nav>
 			<p>
 				Images provided by{" "}
