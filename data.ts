@@ -163,15 +163,15 @@ I dropped it after the first 3-4 hours.`,
 	},
 	{
 		title: "Genshin Impact",
-		score: 7.2,
+		score: 7.3,
 		status: "On Hold",
 		tags: ["Singleplayer", "Live Service", "Gacha"],
 		imageUrl:
 			"https://howlongtobeat.com/games/68133_Genshin_Impact.jpg?width=250",
 		categoryScores: {
 			fun: 7,
-			gameplay: 6,
-			graphics: 8,
+			gameplay: 5,
+			graphics: 7,
 			music: 8,
 			story: 2,
 		},
@@ -244,9 +244,9 @@ I really don't like the cardboard cutout that is the MC.
 		categoryScores: {
 			fun: 7,
 			gameplay: 2,
-			graphics: 8,
+			graphics: 7,
 			music: 8,
-			story: 8,
+			story: 9,
 		},
 		review: {
 			overview: `MiHoYo's second gacha game that I've played.
@@ -274,6 +274,8 @@ Even tho, Penacony (the latest world) is also good-looking... especially the Dre
 Being a gacha turn based RPG, it has a lot of META and speculation around characters (way more than Genshin and ZZZ), since you really need all the advantages you can get in this type of game.
 
 The exploration of the maps is quite limited.
+
+Also, the main problem of the grind is still there.
 `,
 
 			graphics: `It seems to be improved from Genshin Impact, even if it's really similar in some of the UI and other things.`,
@@ -291,19 +293,65 @@ The latest main story chapter is actually *really really good (even considering 
 But *the filler in between the main story is very boring*, and I basically skimmed it trough quickly without giving it second thoughts.
 
 The characters are well written. Also, they actually gave the MC *some* personality, even if minor (it gets shown from *some* dialog options and mostly in Penacony's story).
+
+My list of favorite worlds by story is:
+1. Penacony
+2. Herta's Space Station
+3. Xianzhou Luofu
+4. Jarilo VI
 `,
 		},
 	},
 	{
 		title: "Zenless Zone Zero",
-		score: 7.8,
+		score: 7.5,
 		tags: ["Singleplayer", "Live Service", "Gacha"],
 		imageUrl:
 			"https://howlongtobeat.com/games/109101_Zenless_Zone_Zero.png?width=250",
+		categoryScores: {
+			fun: 8,
+			gameplay: 7,
+			graphics: 7,
+			music: 7,
+			story: 4,
+		},
+		review: {
+			overview: `MiHoYo's third gacha game that I've played.
+
+To know my stance on gacha games, see the Genshin Impact review.
+
+Except for the gacha stuff, they have taken a totally different approach on this game. It's really different from the last two.
+			`,
+			artDirection: `This game mainly adapts a "grungy" and retro aesthetic even though there are some futuristic elements.
+
+Even the characters follow this new line of aesthetic, breaking from the Honkai-like character design from the two previous games.
+
+It's actually quite interesting. But sometimes it's just... too much...
+			`,
+			gameplay: `It's a DMC-like (without the style score) and it's really fun.
+
+Every character has it's own set of combos (that gets difficult for me to remember some times) and integrates well with the "assist" gameplay mechanic.
+
+Obviously there is the standard gacha predatory system, but this time the grind seems *a little* easier (?).
+
+In this section I'm pretty influenced by Zhu Yuan's moveset... it's just too fun.
+
+The "Exploration" (not in the "overworld") mechanic is cute, but I don't like it that much. It's basically full of minigames, and I prefer combat over that.
+			`,
+			graphics: `It's totally different from the other games. It's way more detailed and cleaner.`,
+			performance: `I've noticed some frame drops, in some levels and in combat.`,
+			music: `I have no idea on how MiHoYo games have such good music.`,
+			story: `I feel the same as Genshin on this one... Just slightly better.
+
+But the main problems I described before still persist.
+
+The sidequests are really boring.
+			`,
+		},
 	},
 	{
 		title: "Fate/Grand Order",
-		score: 7.5,
+		score: 6.7,
 		tags: ["Singleplayer", "Live Service", "Gacha", "VN"],
 		imageUrl:
 			"https://howlongtobeat.com/games/36059_FateGrand_Order.jpg?width=250",
