@@ -111,25 +111,31 @@ But, other than that, the main cast is actually quite good and interesting.
 			story: 7,
 		},
 		review: {
-			overview: `A nice indie cyberpunk-styled platformer.`,
+			overview: `A nice indie cyberpunk platformer.`,
 			
-			artDirection: `Very good. The two main cities in the game are very detailed. It's obviously inspired by Cyberpunk 2077, but it's fine.`,
+			artDirection: `Very good. The two main cities in the game are very detailed. 
+
+It's obviously inspired by Cyberpunk 2077, but it's fine.
+`,
 			
-			gameplay: `Relatively simple combat mechanics. 
-			
-			The only problem I had with it, is that on a controller, you can't select a consumable and move at the same time, so I stumbled up a couple of times. 
-			
-			The difficoulty is adequate.`,
+			gameplay: `
+Relatively simple combat mechanics. 
+
+The only problem I had with it, is that on a controller, you can't select a consumable and move at the same time, so I stumbled up a couple of times. 
+
+The difficoulty is adequate.`,
 			
 			graphics: `Good.`,
 			
-			music: `Cyberpunk/Synth soundtrack.
-			
-			There are some cute tracks here and there. These are the ones that I like the most:
-			- Skopp
-			- Ann's Home
-			- Margaritia
-			- Rooftop`,
+			music: `
+Cyberpunk/Synth soundtrack.
+
+There are some cute tracks here and there. These are the ones that I like the most:
+- Skopp
+- Ann's Home
+- Margaritia
+- Rooftop
+`,
 			
 			performance: `Works good.`,
 			
