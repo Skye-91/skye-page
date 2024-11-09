@@ -96,6 +96,47 @@ But, other than that, the main cast is actually quite good and interesting.
 		},
 	},
 	{
+		title: "ANNO: Mutationem",
+		score: 8,
+		status: "Completed",
+		tags: ["Singleplayer"],
+		timesCompleted: 1,
+		imageUrl:
+			"https://howlongtobeat.com/games/81835_ANNO_Mutationem.jpg?width=250",
+		categoryScores: {
+			fun: 8,
+			gameplay: 7,
+			graphics: 8,
+			music: 7,
+			story: 7,
+		},
+		review: {
+			overview: `A nice indie cyberpunk-styled platformer.`,
+			
+			artDirection: `Very good. The two main cities in the game are very detailed. It's obviously inspired by Cyberpunk 2077, but it's fine.`,
+			
+			gameplay: `Relatively simple combat mechanics. 
+			
+			The only problem I had with it, is that on a controller, you can't select a consumable and move at the same time, so I stumbled up a couple of times. 
+			
+			The difficoulty is adequate.`,
+			
+			graphics: `Good.`,
+			
+			music: `Cyberpunk/Synth soundtrack.
+			
+			There are some cute tracks here and there. These are the ones that I like the most:
+			- Skopp
+			- Ann's Home
+			- Margaritia
+			- Rooftop`,
+			
+			performance: `Works good.`,
+			
+			story: `It's ok.`,
+		},
+	},
+	{
 		title: "AI: The Somnium Files",
 		score: 9.2,
 		status: "Completed",
