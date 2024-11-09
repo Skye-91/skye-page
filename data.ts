@@ -123,7 +123,7 @@ Relatively simple combat mechanics.
 
 The only problem I had with it, is that on a controller, you can't select a consumable and move at the same time, so I stumbled up a couple of times. 
 
-The difficoulty is adequate.`,
+The difficulty is adequate.`,
 			
 			graphics: `Good.`,
 			
