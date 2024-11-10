@@ -111,7 +111,8 @@ But, other than that, the main cast is actually quite good and interesting.
 			story: 7,
 		},
 		review: {
-			overview: `A nice indie cyberpunk platformer.`,
+			overview: `Unlocked all the achievements. 
+A nice indie cyberpunk platformer.`,
 			
 			artDirection: `Very good. The two main cities in the game are very detailed. 
 
